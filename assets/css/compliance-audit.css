@@ -1,0 +1,1083 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+/* Compliance Audit Tabs start */
+
+.compliance_audit_tabs {
+  padding: 0px 20px 0px 35px;
+}
+
+.nav-item .nav-link {
+  position: relative;
+  /* background-color: rgba(20, 68, 146, 0.8); */
+  color: var(--blue) !important;
+  font-family: var(--primary-font) !important;
+  font-weight: 500 !important;
+  margin-right: 0;
+  padding-right: 20px;
+  border-radius: 0 !important;
+  border: none !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 0;
+}
+
+.border {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 0px;
+  bottom: 1px;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 1;
+}
+
+.nav-item .nav-link.active {
+  background-color: #144492 !important;
+  color: var(--white) !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+}
+
+/* Compliance Chart */
+.social_compliance_chart {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.chart_box {
+  width: 100%;
+}
+
+.chart_box p {
+  color: #000;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* cntribution header */
+.contribution_header {
+  position: relative;
+  margin-top: 30px;
+}
+
+.contribution_header .contribution_header_bg {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.contribution_header .contribution_header_content {
+  padding: 25px;
+}
+
+.contribution_header_content h2 {
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.contribution_header_content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 300;
+  margin: 15px 0 20px;
+}
+
+.contribution_header_content div {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.contribution_header_content div img {
+  width: 20px;
+  margin: 0 7px;
+}
+
+@media screen and (max-width: 1400px) {
+  .contribution_header_content h2 {
+    font-size: 1.7em;
+  }
+
+  .contribution_header_content p {
+    font-size: 1em;
+  }
+
+  .contribution_header_content div {
+    font-size: 1em;
+  }
+}
+
+/* Compliance Audit Options */
+.compliance_audit_options {
+  padding: 170px 0 80px;
+}
+
+.compliance_audit_options_header h4 {
+  color: #144492;
+  font-family: var(--primary-font);
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.compliance_audit_option_items {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.compliance_audit_option_items:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.option_items_left p {
+  margin-bottom: 0;
+  color: #1e2749;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.option_items_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option_items_left .select_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.option_items_left .select_box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.option_items_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option_items_right .option_items_right_col_1 {
+  display: flex;
+  align-items: center;
+}
+
+.option_items_right_col_1 .option_select {
+  margin-right: 10px;
+}
+
+.option_items_left_col_1 .option_select {
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.option_items_left_col_1 p {
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
+
+.option_items_right_col_1 .option_select input[type="radio"] {
+  accent-color: #144492;
+}
+
+.option_items_left_col_1 .option_select input[type="radio"] {
+  accent-color: #144492;
+}
+
+.option_items_right_col_1 .option_select label {
+  margin-right: 8px;
+  cursor: pointer;
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.option_items_left_col_1 .option_select label {
+  margin-right: 8px;
+  cursor: pointer;
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.option_items_right_col_1 .select_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.option_items_right_col_1 .select_box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.option_items_right_col_1 .enter_usd_value {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 40px;
+  width: 170px;
+  outline: none;
+  padding-left: 15px;
+}
+
+.option_items_right_col_2 a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: rgba(20, 68, 146, 0.1);
+  margin-left: 15px;
+}
+
+.option_items_right_col_2 a img {
+  width: 22px;
+}
+
+.option_items_add_btn .start_btn {
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  outline: none;
+  border-radius: 4px;
+  background: #fc7e14;
+  font-family: var(--primary-font);
+  color: var(--white);
+  font-size: 1em;
+  height: 40px;
+  padding: 0 20px;
+  font-weight: 400;
+}
+
+.option_items_add_btn a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  line-height: 40px;
+  background: transparent;
+  height: 40px;
+  color: #fc7e14;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.options_item_link {
+  float: right;
+}
+
+.options_item_link p {
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+.options_item_link a {
+  color: #037bff;
+  font-family: var(--primary-font);
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.submit_btn {
+  float: right;
+  margin: 30px 0;
+}
+
+.submit_btn a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #144492;
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+.submit_btn a.active,
+.submit_btn a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.submit_btn a.active svg path,
+.submit_btn a:hover svg path {
+  fill: var(--white);
+}
+
+.submit_btn a svg {
+  margin-right: 6px;
+  transition: 0.4s;
+}
+
+.submit_btn a svg path {
+  fill: #144492;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 1400px) {
+  .compliance_audit_options_header h4 {
+    font-size: 1.3em;
+  }
+
+  .option_items_left p {
+    font-size: 0.8em;
+  }
+
+  .option_items_left .select_box {
+    height: 35px;
+    width: 160px;
+  }
+
+  .option_items_left .select_box select {
+    font-size: 0.8em !important;
+  }
+
+  .option_items_right_col_1 .select_box select {
+    font-size: 0.8em !important;
+  }
+
+  .option_items_add_btn .start_btn {
+    font-size: 0.8em;
+  }
+
+  .option_items_add_btn a {
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_1 .option_select label {
+    margin-right: 6px;
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_1 .option_select input[type="radio"] {
+    transform: scale(0.9);
+  }
+
+  .option_items_right_col_1 .select_box {
+    height: 35px;
+    width: 160px;
+  }
+
+  .option_items_right_col_1 .enter_usd_value {
+    height: 35px;
+    width: 160px;
+    font-size: 0.8em;
+  }
+
+  .option_items_right_col_2 a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 8px;
+  }
+
+  .option_items_right_col_2 a img {
+    width: 18px;
+  }
+
+  .options_item_link a {
+    font-size: 0.8em;
+  }
+}
+
+/* @media screen and (max-width: 1400px) {
+  .option_items_right_col_1 .option_select input[type="radio"] {
+    transform: scale(0.8);
+  }
+
+  .option_items_right_col_2 button {
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+  }
+
+  .option_items_right_col_2 button img {
+    width: 16px;
+  }
+
+  .options_item_link a {
+    font-size: 0.7em;
+  }
+} */
+
+/* Policy Compliance Start */
+
+.policy_option_items_text p {
+  color: #4f4f4f;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.policy_option_btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.policy_option_btn a {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.policy_option_btn a svg {
+  width: 18px;
+  margin-right: 4px;
+}
+
+.policy_option_btn a.link_btn {
+  color: #f2994a;
+  background-color: rgba(242, 153, 74, 0.1);
+}
+.policy_option_btn a.upload_btn {
+  color: #144492;
+  background-color: rgba(20, 68, 146, 0.1);
+  margin-left: 10px;
+  display: inline-block;
+}
+.policy_option_btn a.start_btn {
+  color: var(--white);
+  background-color: #fc7e14;
+  padding: 0 10px;
+}
+
+.policy_option_btn a.add_btn {
+  margin-right: 25px;
+}
+
+.policy_option_left_col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.policy_option_left_col_2 .option_select {
+  width: 50px;
+  margin-right: 0;
+}
+
+.policy_option_left_col_2 .option_select label {
+  margin-right: 0 !important;
+}
+
+.policy_option_select {
+  width: calc(100% - 100px);
+  max-width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.policy_option_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+  font-size: 1em;
+}
+
+.policy_option_single_start_btn {
+  width: 280px;
+  justify-content: start !important;
+}
+
+@media screen and (max-width: 1560px) {
+  .policy_option_items_text p {
+    font-size: 0.8em;
+  }
+
+  .policy_option_btn a {
+    font-size: 0.8em;
+    padding: 0 5px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .policy_option_btn a svg {
+    width: 16px;
+    margin-right: 0px;
+  }
+
+  .policy_option_select select {
+    font-size: 0.8em;
+  }
+
+  .policy_option_single_start_btn {
+    width: 215px;
+    justify-content: start !important;
+  }
+
+  .policy_option_btn a.add_btn {
+    margin-right: 20px;
+  }
+}
+
+/* Policy Compliance End */
+
+/* Workforce-Duty of Care Start */
+
+.option_items_right_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workforce_option_select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.workforce_option_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.workforce_option_download_btn a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #144492;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+}
+
+.workforce_option_download_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.workforce_option_input input {
+  width: 100%;
+  height: 40px;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.compliance_audit_options_header p {
+  color: rgba(30, 39, 73, 0.7);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+
+/* Workforce-Duty of Care End */
+
+/* Environment & Sustainability Start */
+
+.environment_option_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_1 .radio_btn {
+  width: 55px;
+}
+
+.environment_option_col_1 .radio_btn input {
+  accent-color: #144492;
+}
+.environment_option_col_2 .radio_btn input {
+  accent-color: #144492;
+}
+
+.environment_option_col_1 .radio_btn label {
+  color: rgba(30, 39, 73, 0.4);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  margin-right: 6px;
+  font-size: 1rem;
+}
+.environment_option_col_2 .radio_btn label {
+  color: rgba(30, 39, 73, 0.4);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-right: 6px;
+}
+
+.environment_option_select {
+  width: calc(100% - 160px);
+  max-width: 160px;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.environment_option_select select {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: rgba(30, 39, 73, 0.4);
+}
+
+.environment_option_upload_btn a {
+  display: inline-block;
+  max-width: 100px;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  background-color: rgba(20, 68, 146, 0.05);
+  border-radius: 4px;
+  color: rgba(20, 68, 146, 0.5);
+  text-decoration: none;
+}
+
+.environment_option_upload_btn a svg {
+  width: 15px;
+}
+
+.environment_option_upload_btn a svg path {
+  fill: rgba(20, 68, 146, 0.5);
+}
+
+.environment_option_col_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.environment_option_col_2 .radio_btn {
+  width: 50px;
+}
+
+.environment_option_col_2 .start_btn a {
+  display: inline-block;
+  padding: 0 10px;
+  max-width: 180px;
+  background: #fc7e14 !important;
+  font-size: 1em;
+  white-space: nowrap;
+  color: var(--white);
+  font-weight: 500;
+  font-family: var(--primary-font);
+  text-decoration: none;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+.environment_option_col_3 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.environment_option_textarea textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  resize: none;
+  height: 70px;
+  margin-top: 15px;
+  padding: 8px 15px;
+  font-size: 1em;
+}
+
+.option_items_right_col_2 {
+  width: 120px;
+  display: flex;
+  justify-content: end;
+}
+
+.options_item_link {
+  text-align: right;
+}
+
+@media screen and (max-width: 1600px) {
+  .option_items_right_col_2 {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .environment_option_upload_btn a {
+    font-size: 0.8em;
+  }
+  .environment_option_upload_btn a svg {
+    width: 16px;
+  }
+  .environment_option_col_2 .start_btn a {
+    font-size: 0.8em;
+  }
+  .environment_option_textarea textarea {
+    font-size: 0.8em;
+  }
+  .environment_option_col_1 .radio_btn label {
+    font-size: 0.8rem;
+  }
+  .environment_option_col_2 .radio_btn label {
+    font-size: 0.8rem;
+  }
+
+  .environment_option_select select {
+    font-size: 0.8em;
+  }
+
+  .options_item_link {
+    font-size: 0.8em;
+  }
+
+  .workforce_option_download_btn a {
+    font-size: 0.8em;
+  }
+
+  .workforce_option_select select {
+    font-size: 0.8em;
+  }
+}
+
+/* Environment & Sustainability End */
+
+/* Modern Slavery Start */
+
+.modern_slavery_input input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  font-size: 1em;
+  padding: 0 15px;
+}
+
+.modern_slavery_select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern_slavery_select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: var(--primary-font);
+  color: rgba(30, 39, 73, 0.7);
+}
+
+.modern_slavery_link_btn {
+  float: right;
+}
+
+.modern_slavery_link_btn a {
+  text-decoration: none;
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  color: #f2994a;
+  font-size: 1em;
+  font-family: var(--primary-font);
+  background-color: rgba(242, 153, 74, 0.1);
+}
+
+.modern_slavery_link_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.modern_slavery_btn {
+  float: right;
+}
+
+.modern_slavery_btn a {
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  color: #144492;
+  font-size: 1em;
+  margin-left: 8px;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_btn a svg {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.modern_slavery_certification_btn {
+  margin-top: 20px;
+}
+
+.modern_slavery_certification_btn a {
+  text-decoration: none;
+  height: 40px;
+  padding: 0 15px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(20, 68, 146, 0.1);
+  color: #144492;
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_btn a svg {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.modern_audit_option_start_btn {
+  margin-top: 15px;
+}
+
+.modern_audit_option_start_btn a {
+  text-decoration: none;
+  height: 40px;
+  padding: 0 15px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fc7e14;
+  color: var(--white);
+  font-size: 1em;
+  font-family: var(--primary-font);
+}
+
+.modern_slavery_risk_chart {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* height: 430px; */
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.modern_slavery_risk_chart h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: #144492;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modern_slavery_risk_chart p {
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: var(--black);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.modern_slavery_risk_chart .chart_legends {
+  display: flex;
+  align-items: center;
+}
+
+.chart_legends {
+  display: flex;
+  justify-content: center;
+}
+
+.legend_items {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.legend_items .legend_box.blue {
+  background-color: #144492;
+}
+.legend_items .legend_box.red {
+  background-color: #ff0000;
+}
+
+.legend_items .legend_box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.legend_items span {
+  font-size: 0.8em;
+  color: #878787;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.modern_audit_option_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .chart_box p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .modern_slavery_risk_chart {
+    padding: 20px 10px;
+  }
+  .modern_slavery_input input {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_select select {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_link_btn a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_link_btn a svg {
+    width: 18px;
+  }
+
+  .modern_slavery_btn a {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_btn a svg {
+    width: 16px;
+  }
+
+  .modern_audit_option_start_btn a,
+  .modern_slavery_btn a {
+    font-size: 0.8em;
+  }
+
+  .modern_slavery_btn a svg {
+    width: 16px;
+  }
+
+  /* .modern_slavery_risk_chart {
+    height: 400px;
+  } */
+
+  .modern_slavery_risk_chart h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* Modern Slavery End */
+
+/* Compliance Audit Tabs End */

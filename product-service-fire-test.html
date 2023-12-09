@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page - Fire and Test</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/product-service-fire-test.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li>
+              <a href="./product.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Product</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Services</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Product Service Fire Page -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <a href="#"
+            ><img src="./assets/image/product_fire_brand_logo_1.png" alt=""
+          /></a>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <div class="product_service_wrapper">
+        <!-- Product Fire Page Tab Start -->
+        <div class="product_fire_tab">
+          <div class="product_fire_head">
+            <h4>Fire and Test Australasia PTY LTD</h4>
+          </div>
+          <div class="product_tabs">
+            <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="pill"
+                  href="#products"
+                >
+                  <span class="border"></span>Products & Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#procurement">
+                  <span class="border"></span>Social Procurement & Compliance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#supplier">
+                  <span class="border"></span>Supplier Capability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#community">
+                  <span class="border"></span>Community Purpose</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#reviews">
+                  <span class="border"></span>Rating and Reviews</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#sdg">
+                  <span class="border"></span>UN SDG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#location">
+                  <span class="border"></span>Location</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#insurances">
+                  <span class="border"></span>Insurances & Accreditations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#environmental">
+                  <span class="border"></span>Environmental & Sustainability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#training">
+                  <span class="border"></span>Training & Employment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#employment">
+                  <span class="border"></span>Employment</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <!-- products tab start -->
+            <div id="products" class="container-fluid tab-pane p-0 active">
+              <!-- related product start -->
+              <section id="related_product">
+                <div class="related_product_head">
+                  <h3>Products</h3>
+
+                  <div class="related_product_head_btn">
+                    <a href="#"
+                      >View More
+                      <span><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+
+                <div
+                  class="related_product_card_wrapper"
+                  style="width: 100%; overflow-x: scroll"
+                >
+                  <div class="related_product_cards" style="width: 100%">
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_1.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>Firepro Dry Powder Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$18.73</span>
+                        <span>$24.17</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_2.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>9 Kg Fire Extinguishers Water or Foam</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$29.12</span>
+                        <span>$32.49</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_3.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>MRI Sapphire Fire Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$49.25</span>
+                        <span>$57.12</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_4.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>Amerex 571 Class D metal fire extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$320.00</span>
+                        <span>$390.12</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_5.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>MRI Sapphire Fire Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$320.00</span>
+                        <span>$390.12</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_6.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>MRI Sapphire Fire Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$320.00</span>
+                        <span>$390.12</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_7.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>MRI Sapphire Fire Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$320.00</span>
+                        <span>$390.12</span>
+                      </div>
+                    </div>
+
+                    <div class="related_product_card_item">
+                      <div class="related_product_card_img">
+                        <img
+                          src="./assets/image/related_product_fire_img_8.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="related_product_card_rating">
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-solid fa-star"></i></a>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </div>
+
+                      <div class="related_product_card_desc">
+                        <div class="related_product_card_desc_img">
+                          <img
+                            src="./assets/image/related_product_fire_card_desc_img.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="related_product_card_desc_content">
+                          <p>MRI Sapphire Fire Extinguisher</p>
+                        </div>
+                      </div>
+
+                      <div class="related_product_card_price">
+                        <span>$320.00</span>
+                        <span>$390.12</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- related product end -->
+
+              <!-- product services start -->
+              <div class="product_service">
+                <div class="product_service_head">
+                  <p>Services</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="product_service_card active">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_1.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>FIRE EQUIPMENT TESTING & INSPECTIONS</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="product_service_card">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_2.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>FIRE EQUIPMENT TESTING & INSPECTIONS</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="product_service_card">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_3.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>ELECTRICAL TESTING & INSPECTION</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="product_service_card">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_4.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>INSTALLATION OF FIBRE</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="product_service_card">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_5.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>DATA ROOM INSTALLATION</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="product_service_card">
+                      <img
+                        src="./assets/image/product_fire_test_services_img_6.png"
+                        alt=""
+                      />
+
+                      <div class="service_card_desc">
+                        <p>PPE REVIEW AND PROCUREMENT</p>
+                      </div>
+
+                      <div class="service_card_overlay">
+                        <h4>Data, ICT and Procurement Management</h4>
+                        <p>
+                          Our experienced and qualified team have extensive
+                          experience and expertise in the fire, data, ICT, PFAS
+                          and procurement sectors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product_service_btn">
+                  <a href="#">Load More</a>
+                </div>
+              </div>
+              <!-- product services end -->
+            </div>
+            <!-- products tab end -->
+
+            <!-- procurement tab start -->
+            <div id="procurement" class="container-fluid tab-pane p-0">
+              <!-- social proc product chart start -->
+              <section id="social_proc_chart">
+                <div class="social_proc_chart_head">
+                  <p>
+                    Social Procurement Workforce Hours Contributed for your
+                    purchase: <span>12 Hours</span>
+                  </p>
+                </div>
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-5">
+                    <div class="social_proc_chart_box">
+                      <div id="socialProcChartPie"></div>
+
+                      <div class="social_proc_chart_legend">
+                        <div class="legends">
+                          <div class="legend_box color1"></div>
+                          <span>Youth 16 - 24 14%</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color2"></div>
+                          <span>Mature Aged 14%</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color3"></div>
+                          <span
+                            >Aboriginal or Torres <br />
+                            Strait Islander 72%</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="social_proc_chart_box">
+                          <div class="social_proc_chart_box_img">
+                            <img
+                              src="./assets/image/social_proc_chart_img_1.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <p>
+                            Female Owned <br />
+                            Business
+                          </p>
+                          <h4 style="color: #000091">50%</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="social_proc_chart_box">
+                          <div class="social_proc_chart_box_img">
+                            <img
+                              src="./assets/image/social_proc_chart_img_2.png"
+                              alt=""
+                            />
+                          </div>
+                          <p>
+                            Small to Medium <br />
+                            Enterprise (SME)
+                          </p>
+                          <h4>17 FTE</h4>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="social_proc_chart_box">
+                          <div class="social_proc_chart_box_img">
+                            <img
+                              src="./assets/image/social_proc_chart_img_3.png"
+                              alt=""
+                            />
+                          </div>
+                          <p>
+                            Manufactured in <br />
+                            Locally
+                          </p>
+                          <h4 style="color: #980090">Victoria</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- social proc product chart end -->
+            </div>
+            <!-- procurement tab end -->
+
+            <!-- supplier tab start -->
+            <div id="supplier" class="container-fluid tab-pane p-0">
+              <div id="supplier_capability_features">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="features_cards">
+                      <div class="features_cards_icon">
+                        <img
+                          src="./assets/icons/features_cards_icon_1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <h4>Capability</h4>
+
+                      <div class="features_card_content">
+                        <div class="features_card_content_item">
+                          <h5>Previous Projects</h5>
+                          <p>
+                            <span>Project:</span> Hansen Yuncken - Barwon Prison
+                          </p>
+                          <p><span>Value:</span> 50,000</p>
+                          <p><span>Year:</span> 2023</p>
+                        </div>
+                        <div class="features_card_content_item">
+                          <h5>Insurances held & value</h5>
+                          <p>Professional Indemnity: $5M</p>
+                          <p>Public Liability: $20M</p>
+                          <h5>Industry Certifications</h5>
+                          <ul>
+                            <li>
+                              Fire Protection Association Australia Member
+                            </li>
+                            <li>
+                              National Electrical & Communications Association
+                              Member
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="features_card_content_item">
+                          <h5>Insurances held & value</h5>
+                          <p>Professional Indemnity: $5M</p>
+                          <p>Public Liability: $20M</p>
+                          <h5>Industry Certifications</h5>
+                          <ul>
+                            <li>
+                              Fire Protection Association Australia Member
+                            </li>
+                            <li>
+                              National Electrical & Communications Association
+                              Member
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="features_cards">
+                      <div class="features_cards_icon">
+                        <img
+                          src="./assets/icons/features_cards_icon_2.svg"
+                          alt=""
+                        />
+                      </div>
+                      <h4>Capacity</h4>
+
+                      <div class="features_card_content">
+                        <div class="features_card_content_item">
+                          <h5>Locations</h5>
+                          <p>National, Metro & Regional</p>
+                        </div>
+                        <div class="features_card_content_item">
+                          <h5>IServices</h5>
+                          <ul>
+                            <li>Special Hazards Fire Suppression Systems</li>
+                            <li>Data, ICT and Procurement Management</li>
+                            <li>Electrical Test and Tagging</li>
+                            <li>OHS Consulting</li>
+                            <li>Environmental - PFAS Remediation</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="features_cards">
+                      <div class="features_cards_icon">
+                        <img
+                          src="./assets/icons/features_cards_icon_3.svg"
+                          alt=""
+                        />
+                      </div>
+                      <h4>Delivery</h4>
+
+                      <div class="features_card_content">
+                        <div class="features_card_content_item">
+                          <h5>Shipping Processing Time</h5>
+                          <p>
+                            In stock item next day delivery (Order prior to
+                            10am)
+                          </p>
+                        </div>
+                        <div class="features_card_content_item">
+                          <h5>Order Size</h5>
+                          <p>Minimum: <a href="#">Contact Us</a></p>
+                          <p>Maximum: <a href="#">Contact Us</a></p>
+                        </div>
+                        <div class="features_card_content_item">
+                          <h5>Order Size</h5>
+                          <p>Minimum: <a href="#">Contact Us</a></p>
+                          <p>Maximum: <a href="#">Contact Us</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="features_cards">
+                      <div class="features_cards_icon">
+                        <img
+                          src="./assets/icons/features_cards_icon_3.svg"
+                          alt=""
+                        />
+                      </div>
+                      <h4>Find Out More</h4>
+
+                      <div class="features_card_content">
+                        <div class="features_card_content_item">
+                          <h5>Frequently Asked Questions</h5>
+                          <p>
+                            Making changes to an order Terms for refunds and
+                            exchange Reoccurring orders
+                          </p>
+                        </div>
+                        <div class="features_card_content_item active">
+                          <h4>
+                            Return to <br />
+                            Home Page
+                          </h4>
+                        </div>
+                        <div class="features_card_content_item active">
+                          <h4>
+                            Return to <br />
+                            Home Page
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space pb-5"></div>
+            </div>
+            <!-- supplier tab end -->
+
+            <!-- community tab Start -->
+            <div id="community" class="container-fluid tab-pane p-0">
+              <div class="comm-return-card">
+                <div class="card-head">
+                  <p>Community Return</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-3">
+                    <div class="profit-info text-center">
+                      <img
+                        src="./assets/image/comm-purpose-img-05.png"
+                        alt=""
+                      />
+                      <p>Education for Remote Indigenous Communities</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="profit-info text-center">
+                      <img
+                        src="./assets/image/comm-purpose-img-04.png"
+                        alt=""
+                      />
+                      <p>Employment</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="profit-info text-center">
+                      <img
+                        src="./assets/image/comm-purpose-img-03.png"
+                        alt=""
+                      />
+                      <p>Sustainability</p>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  style="
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.6);
+                    text-align: center;
+                    padding: 10px 60px;
+                    margin-bottom: 0;
+                  "
+                >
+                  We work in partnership with remote First Nations communities
+                  to ensure their young people have the best outcomes and
+                  opportunities through education and lifelong learning.
+                </p>
+              </div>
+
+              <div class="space pb-5"></div>
+            </div>
+            <!-- community tab end -->
+
+            <!-- rating reviews tab start -->
+            <div id="reviews" class="container-fluid tab-pane p-0">
+              <!-- product reviews head start -->
+              <div class="product_review_head">
+                <div class="product_review_head_name">
+                  <h5>All Reviews <span>(320)</span></h5>
+                </div>
+
+                <div class="product_review_head_btn">
+                  <button class="filter_btn">
+                    <img src="./assets/icons/product_slider_icon.svg" alt="" />
+                  </button>
+
+                  <div class="product_review_select_box">
+                    <select name="" id="">
+                      <option value="Latest">Latest</option>
+                      <option value="Oldest">Oldest</option>
+                    </select>
+                  </div>
+
+                  <button class="review_btn">Write a Review</button>
+                </div>
+              </div>
+              <!-- product reviews head end -->
+
+              <!-- product reviews cards start -->
+              <section id="product_reviews">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="product_reviews_cards">
+                      <div class="product_reviews_cards_rating">
+                        <div class="rating_star">
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                      </div>
+
+                      <div class="product_reviews_user">
+                        <div class="reviews_user_details">
+                          <div class="reviews_user_avatar">
+                            <img
+                              src="./assets/icons/product_review_user_avatar.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <h5>JHG</h5>
+                          <span
+                            ><img
+                              src="./assets/icons/product_reviews_check_icon.svg"
+                              alt=""
+                          /></span>
+                        </div>
+
+                        <div class="reviews_user_project">
+                          <h5><span>Project:</span> Metro Tunnel</h5>
+                        </div>
+                      </div>
+
+                      <div class="product_reviews_user_comments">
+                        <p>
+                          Product is exactly as described, prompt and efficient
+                          <br />
+                          delivery
+                        </p>
+                      </div>
+
+                      <div class="product_reviews_post_date">
+                        <p>Posted on August 18, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="product_reviews_cards">
+                      <div class="product_reviews_cards_rating">
+                        <div class="rating_star">
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                      </div>
+
+                      <div class="product_reviews_user">
+                        <div class="reviews_user_details">
+                          <div class="reviews_user_avatar">
+                            <img
+                              src="./assets/icons/product_review_user_avatar.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <h5>Hansen Yunken</h5>
+                          <span
+                            ><img
+                              src="./assets/icons/product_reviews_check_icon.svg"
+                              alt=""
+                          /></span>
+                        </div>
+
+                        <div class="reviews_user_project">
+                          <h5><span>Project:</span> Barwon Prison</h5>
+                        </div>
+                      </div>
+
+                      <div class="product_reviews_user_comments">
+                        <p>
+                          Ordered in bulk and received product 1 week ahead of
+                          <br />
+                          schedule. Thanks Fire & Test Australasia
+                        </p>
+                      </div>
+
+                      <div class="product_reviews_post_date">
+                        <p>Posted on August 15, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="product_reviews_cards">
+                      <div class="product_reviews_cards_rating">
+                        <div class="rating_star">
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                      </div>
+
+                      <div class="product_reviews_user">
+                        <div class="reviews_user_details">
+                          <div class="reviews_user_avatar">
+                            <img
+                              src="./assets/icons/product_review_user_avatar.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <h5>Sungrow</h5>
+                          <span
+                            ><img
+                              src="./assets/icons/product_reviews_check_icon.svg"
+                              alt=""
+                          /></span>
+                        </div>
+
+                        <div class="reviews_user_project">
+                          <h5><span>Project:</span> Derby Solar Farm</h5>
+                        </div>
+                      </div>
+
+                      <div class="product_reviews_user_comments">
+                        <p>
+                          Wide range of fire and fire PPE and ability to <br />
+                          deliver to remote areas next day
+                        </p>
+                      </div>
+
+                      <div class="product_reviews_post_date">
+                        <p>Posted on August 04, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="product_reviews_cards">
+                      <div class="product_reviews_cards_rating">
+                        <div class="rating_star">
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                      </div>
+
+                      <div class="product_reviews_user">
+                        <div class="reviews_user_details">
+                          <div class="reviews_user_avatar">
+                            <img
+                              src="./assets/icons/product_review_user_avatar.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <h5>Vortex</h5>
+                          <span
+                            ><img
+                              src="./assets/icons/product_reviews_check_icon.svg"
+                              alt=""
+                          /></span>
+                        </div>
+
+                        <div class="reviews_user_project">
+                          <h5><span>Project:</span> City of Ballarat</h5>
+                        </div>
+                      </div>
+
+                      <div class="product_reviews_user_comments">
+                        <p>
+                          Excellent service and a wide variety of products.
+                          <br />
+                          Great job!
+                        </p>
+                      </div>
+
+                      <div class="product_reviews_post_date">
+                        <p>Posted on August 04, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- product reviews cards end -->
+              <div class="space pb-5"></div>
+            </div>
+            <!-- rating reviews tab end -->
+
+            <!-- un sdg tab start -->
+            <div id="sdg" class="container-fluid tab-pane p-0">
+              <div class="un-sdg-goals-content pb-5">
+                <div class="un-sdg-container p-4">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                      <div class="head-img text-center">
+                        <img
+                          src="./assets/image/un_sdg_img_01.png"
+                          alt=""
+                          style="width: 55%"
+                        />
+                      </div>
+                      <div class="all-step-images text-center pt-4">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-9">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_02.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_03.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_04.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_05.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_06.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_07.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="row pt-4">
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_08.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_09.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_10.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_11.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_12.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_13.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="row pt-4">
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_14.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_15.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_16.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_17.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_18.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="col-md-2">
+                                <img
+                                  src="./assets/image/un_sdg_img_19.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space pb-1"></div>
+            </div>
+            <!-- un sdg tab end -->
+
+            <!-- location tab start -->
+            <div id="location" class="container-fluid tab-pane p-0">
+              <section id="product_location">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="product_location_content">
+                      <div class="product_location_header">
+                        <h4>Seller Location</h4>
+
+                        <div class="product_location_brand">
+                          <div class="brand_logo">
+                            <img
+                              src="./assets/icons/product_location_brand_icon.svg"
+                              alt=""
+                            />
+                          </div>
+                          <p>Emotions</p>
+                        </div>
+                      </div>
+                      <div class="product_location_rating">
+                        <p>Member Since 2022 | Total Products 200 |</p>
+                        <div class="location_rating_star">
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                          <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                      </div>
+
+                      <div class="product_location_map">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.734306268365!2d145.22181377666874!3d-38.02997314642712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66b369250fd53%3A0xc46ef7ceb1f260b4!2sEmotions%20Org!5e0!3m2!1sen!2sbd!4v1695908424067!5m2!1sen!2sbd"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="product_service_area">
+                      <div class="product_service_area_head">
+                        <div class="product_service_area_icon">
+                          <img src="./assets/icons/map_icon.svg" alt="" />
+                        </div>
+                        <h4>Service Area: <a href="#">National</a></h4>
+                      </div>
+
+                      <div class="product_service_area_map">
+                        <img src="./assets/image/service-area_map.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="space pb-5"></div>
+            </div>
+            <!-- location tab end -->
+
+            <!-- insurances tab start -->
+            <div id="insurances" class="container-fluid tab-pane p-0">
+              <div class="insurance_profile_items">
+                <div class="insurance_profile">
+                  <div class="insurance_profile_avatar">
+                    <img src="./assets/image/insurance_avatar_1.png" alt="" />
+                  </div>
+                  <div class="insurance_profile_details">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12">
+                        <div class="insurance_profile_name">
+                          <h4>John B</h4>
+                          <p>Job Seeker</p>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div
+                              class="insurance_profile_info profile_info_right_border"
+                            >
+                              <ul>
+                                <li>
+                                  <span>Experience:</span>
+                                  Placement Laing O’Rourke Civil Team 2 months
+                                </li>
+                                <li>
+                                  <span>Education:</span>
+                                  Bachelor of Construction Management
+                                </li>
+                                <li>
+                                  <span>Tickets:</span>
+                                  White Card
+                                </li>
+                                <li>
+                                  <span>License's:</span>
+                                  Yes Car Full Unrestricted
+                                </li>
+                                <li>
+                                  <span>Car:</span>
+                                  Yes
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="insurance_profile_info">
+                              <ul>
+                                <li>
+                                  <span>Location:</span>
+                                  Dandenong
+                                </li>
+                                <li>
+                                  <span>Looking for:</span>
+                                  Traineeship, Entry Level Graduate Role,
+                                  Contracts Administration
+                                </li>
+                                <li>
+                                  <span>Availability:</span>
+                                  Now
+                                </li>
+                                <li>
+                                  <span>Request My CV:</span>
+                                  Contact Me
+                                </li>
+                                <li>
+                                  <span>Request an Interview:</span>
+                                  Contact Me
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="insurance_profile_about">
+                  <h4>About Me</h4>
+                  <p>
+                    Recent graduate Bachelor Construction Management seeking an
+                    entry level role, traineeship or cadetship in the
+                    construction sector. I am a quick learner looking for an
+                    opportunity with a progressive organization
+                  </p>
+                </div>
+              </div>
+
+              <div class="insurance_profile_items">
+                <div class="insurance_profile">
+                  <div class="insurance_profile_avatar">
+                    <img src="./assets/image/insurance_avatar_2.png" alt="" />
+                  </div>
+                  <div class="insurance_profile_details">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12">
+                        <div class="insurance_profile_name">
+                          <h4>Kate L</h4>
+                          <p>Job Seeker</p>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div
+                              class="insurance_profile_info profile_info_right_border"
+                            >
+                              <ul>
+                                <li>
+                                  <span>Experience:</span>
+                                  Traffic Management Altus 3 months
+                                </li>
+                                <li>
+                                  <span>Education:</span>
+                                  Certificate II in Building & Construction
+                                </li>
+                                <li>
+                                  <span>Tickets:</span>
+                                  White Card, Forklift Licence, Working at
+                                  Heights
+                                </li>
+                                <li>
+                                  <span>License's:</span>
+                                  Yes Car Probationary
+                                </li>
+                                <li>
+                                  <span>Car:</span>
+                                  Yes
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="insurance_profile_info">
+                              <ul>
+                                <li>
+                                  <span>Location:</span>
+                                  Yarraville
+                                </li>
+                                <li>
+                                  <span>Looking for:</span>
+                                  Apprenticeship 1st year Carpentry,
+                                </li>
+                                <li>
+                                  <span>Availability:</span>
+                                  Now
+                                </li>
+                                <li>
+                                  <span>Request My CV:</span>
+                                  Contact Me
+                                </li>
+                                <li>
+                                  <span>Request an Interview:</span>
+                                  Contact Me
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="insurance_profile_about">
+                  <h4>About Me</h4>
+                  <p>
+                    Recently completed my Certificate II In Building &
+                    Construction looking for a first year apprenticeship in
+                    Carpentry. Western Suburbs
+                  </p>
+                </div>
+              </div>
+
+              <div class="insurance_profile_items">
+                <div class="insurance_profile">
+                  <div class="insurance_profile_avatar">
+                    <img src="./assets/image/insurance_avatar_3.png" alt="" />
+                  </div>
+                  <div class="insurance_profile_details">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-12">
+                        <div class="insurance_profile_name">
+                          <h4>Josh N</h4>
+                          <p>Job Seeker</p>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div
+                              class="insurance_profile_info profile_info_right_border"
+                            >
+                              <ul>
+                                <li>
+                                  <span>Experience:</span>
+                                  Graduate IT role Jacobs and Monash University
+                                  Project Manager
+                                </li>
+                                <li>
+                                  <span>Education:</span>
+                                  Diploma of IT & Systems
+                                </li>
+                                <li>
+                                  <span>Tickets:</span>
+                                  N/A
+                                </li>
+                                <li>
+                                  <span>License's:</span>
+                                  Yes Car Full Unrestricted
+                                </li>
+                                <li>
+                                  <span>Car:</span>
+                                  Yes
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="insurance_profile_info">
+                              <ul>
+                                <li>
+                                  <span>Location:</span>
+                                  Malvern
+                                </li>
+                                <li>
+                                  <span>Looking for:</span>
+                                  IT support, Project Management, Open to
+                                  opportunities
+                                </li>
+                                <li>
+                                  <span>Availability:</span>
+                                  Now
+                                </li>
+                                <li>
+                                  <span>Request My CV:</span>
+                                  Contact Me
+                                </li>
+                                <li>
+                                  <span>Request an Interview:</span>
+                                  Contact Me
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="insurance_profile_about">
+                  <h4>About Me</h4>
+                  <p>
+                    Recently completed a contract with Swinburne University as a
+                    IT Project Manager looking for a long term or gig role.
+                    Ready
+                  </p>
+                </div>
+              </div>
+              <div class="space pb-1"></div>
+            </div>
+            <!-- insurances tab end -->
+
+            <!-- environmental tab start -->
+            <div id="environmental" class="container-fluid tab-pane p-0">
+              <section id="sustainable">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="sustainable_chart">
+                      <div class="sustainable_chart_head">
+                        <p>Environmental & Sustainable Content</p>
+                      </div>
+                    </div>
+                    <div id="sustainableChart">
+                      <div
+                        class="sustainable_chart_features_content1 sustainable_chart_features"
+                      >
+                        <p>
+                          Recycled <br />
+                          Content <br />
+                          <span style="color: #9b7e18">UNSDG 12</span>
+                        </p>
+                      </div>
+                      <div
+                        class="sustainable_chart_features_content2 sustainable_chart_features"
+                      >
+                        <p>
+                          Product <br />
+                          Stewardship <br />
+                          <span style="color: #ae9129">UNSDG 12</span>
+                        </p>
+                      </div>
+                      <div
+                        class="sustainable_chart_features_content3 sustainable_chart_features"
+                      >
+                        <p>
+                          Total UNSDG's <br />
+                          Achieved <br />
+                          <span style="color: #3d8ed9">UNSDG COMPLIANCE</span>
+                        </p>
+                      </div>
+                      <div
+                        class="sustainable_chart_features_content4 sustainable_chart_features"
+                      >
+                        <p>
+                          Renewable <br />
+                          Energy <br />
+                          <span style="color: #f3be00">UN SDG 7</span>
+                        </p>
+                      </div>
+                      <div
+                        class="sustainable_chart_features_content5 sustainable_chart_features"
+                      >
+                        <p>
+                          Stages of <br />
+                          circularity <br />
+                          <span style="color: #a58925">UNSDG 12</span>
+                        </p>
+                      </div>
+                      <div
+                        class="sustainable_chart_features_content6 sustainable_chart_features"
+                      >
+                        <p>
+                          Certifications <br />
+                          Obtained <br />
+                          <span style="color: #d6a806">UNSDG 11</span>
+                        </p>
+                      </div>
+                      <div class="sustainable_chart_content">
+                        <p>5 <br />T</p>
+                        <p>8 <br />kg</p>
+                        <p>10 <br />UNSDGs</p>
+                        <p>0.5 <br />KWh</p>
+                        <p>3 <br />Cert.</p>
+                        <p>120 <br />Deg</p>
+                      </div>
+                      <img
+                        src="./assets/image/sustainable_chart_img.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="sustainable_chart">
+                          <div class="sustainable_chart_head">
+                            <p>Sustainable Materials</p>
+                          </div>
+
+                          <div class="product_chart_wrapper">
+                            <div
+                              id="sustainableMaterialsChartPie"
+                              class="chart"
+                            ></div>
+
+                            <div class="product_chart_labels">
+                              <h4>
+                                100% <br />
+                                Sustainable
+                              </h4>
+                            </div>
+                          </div>
+
+                          <div class="sustainable_chart_legend">
+                            <div class="legends">
+                              <div class="legend_box color1"></div>
+                              <span>Bamboo</span>
+                            </div>
+                            <div class="legends">
+                              <div class="legend_box color2"></div>
+                              <span>Recycled Packaging</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="sustainable_chart">
+                          <div class="sustainable_chart_head">
+                            <p>Local Content</p>
+                          </div>
+
+                          <div class="product_chart_wrapper">
+                            <div
+                              id="sustainableLocalChartPie"
+                              class="chart"
+                            ></div>
+                            <div class="product_chart_labels">
+                              <h4>87%</h4>
+                            </div>
+                          </div>
+
+                          <div class="sustainable_chart_legend">
+                            <div class="legends">
+                              <div class="legend_box color3"></div>
+                              <span
+                                >Local Content <br />
+                                /Australia & New Zealand</span
+                              >
+                            </div>
+                            <div class="legends">
+                              <div class="legend_box color4"></div>
+                              <span>Overseas Content</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="space pb-4"></div>
+            </div>
+            <!-- environmental tab end -->
+
+            <!-- training tab start -->
+            <div id="training" class="container-fluid tab-pane p-0">
+              <section id="local_industry">
+                <div class="social_proc_chart_head">
+                  <p>
+                    Local Industry Development Contributions:
+                    <span>16.5 Hours</span>
+                  </p>
+                </div>
+                <div class="local_industry_employee">
+                  <p><b>N -</b> Workforce Hrs by New Employees</p>
+                  <p><b>R -</b> Workforce Hrs by Retained Employees</p>
+                </div>
+
+                <!-- worforce item -->
+                <div class="workforce_items">
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon active">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4>16.5</h4>
+                      <h5 class="active">
+                        Local <br />
+                        Workforce
+                      </h5>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon active">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 4</span> <span>R: 7</span></h4>
+                      <h5 class="active">Victorian</h5>
+                      <p>
+                        Building Equality <br />
+                        Policy Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon active">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4>N: 2.5</h4>
+                      <h5 class="active">Victorians</h5>
+                      <p>
+                        New Employee Hrs <br />
+                        For Other Roles
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_4.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 0</span></h4>
+                      <h5 class="active">Victorian</h5>
+                      <p>
+                        Cadet <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon active">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_5.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 1</span></h4>
+                      <h5 class="active">Victorian</h5>
+                      <p>
+                        Intern <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 0</span></h4>
+                      <h5 class="active">Victorian</h5>
+                      <p>
+                        Apprentice <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon active">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_7.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 2</span></h4>
+                      <h5 class="active">Victorians</h5>
+                      <p>
+                        Progression <br />
+                        into New Role
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- worforce item -->
+                <div class="workforce_items">
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4>0</h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Total Workforce <br />
+                        Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 4</span> <span>R: 7</span></h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Building Equality <br />
+                        Policy Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4>N: 2.5</h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        New Employee Hrs <br />
+                        For Other Roles
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_4.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 0</span></h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Cadet <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_5.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 1</span></h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Intern <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_6.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 0</span></h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Apprentice <br />
+                        Workforce Hrs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="workforce_item">
+                    <div class="worforce_item_icon">
+                      <img
+                        src="./assets/icons/local_industry_workforce_icon_7.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="worforce_content">
+                      <h4><span>N: 0</span> <span>R: 2</span></h4>
+                      <h5>Outside Victorian</h5>
+                      <p>
+                        Progression <br />
+                        into New Role
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="space pb-1"></div>
+            </div>
+            <!-- training tab end -->
+
+            <div id="employment" class="container-fluid tab-pane p-0"></div>
+          </div>
+        </div>
+        <!-- Product Fire Page Tab End -->
+      </div>
+    </section>
+
+    <!-- Product Service Fire Page -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.3/apexcharts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/productFireTestChart.js"></script>
+  </body>
+</html>

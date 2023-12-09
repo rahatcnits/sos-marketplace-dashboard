@@ -1,0 +1,572 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --neavy-blue: #144492;
+  --light-yellow: #ffeedf;
+  --light-blue: rgba(5, 126, 255, 0.1);
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+/* Project Program Cost Page Start */
+
+.project_program_wrapper {
+  padding: 0px 30px 0px 45px;
+}
+
+/* project first table start */
+
+.project_program_head h2 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.project_table_one_main_head .table_one_row {
+  display: flex;
+  width: 100%;
+  height: 140px;
+  background-color: var(--neavy-blue);
+  border-radius: 10px 10px 0 0;
+}
+
+.project_table_one_main_head .table_one_col_left {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_table_one_main_head .table_one_col_left .col_left_3 {
+  padding-left: 20px;
+}
+
+.project_table_one_main_head .table_one_col_left .col_left_3 span {
+  color: rgb(255, 255, 255, 0.8);
+  font-family: var(--primary-font);
+  font-size: 10px;
+  display: inline-block;
+  line-height: 25px;
+  padding-top: 80px;
+}
+
+.project_table_one_main_head .table_one_col_right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_one_main_head .table_one_col_right .right_col {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.project_table_one_main_head .table_one_col_right .right_col p {
+  color: rgb(255, 255, 255, 0.8);
+  font-family: var(--primary-font);
+  font-size: 10px;
+  white-space: nowrap;
+  display: flex;
+  transform: rotate(-90deg);
+  height: 100%;
+  position: relative;
+}
+
+.project_table_one_main_head .table_one_col_right .right_col p span {
+  position: absolute;
+  bottom: 25px;
+  left: -60px;
+}
+
+.project_table_one_main_head .col_right_border {
+  position: absolute;
+  right: 0;
+  width: 2px;
+  height: 60px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.project_table_one_sub_head .table_one_row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  border-top: 1px solid rgb(255, 255, 255, 0.8);
+  background-color: var(--neavy-blue);
+}
+
+.project_table_one_sub_head .table_one_col_left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_table_one_sub_head .table_one_col_left .left_col {
+  height: 100%;
+}
+
+.project_table_one_sub_head .table_one_col_right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-self: flex-end;
+}
+
+.project_table_one_sub_head .table_one_col_right .right_col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project_table_one_sub_head .table_one_col_right .right_col span {
+  color: rgb(255, 255, 255, 0.8);
+  font-family: var(--primary-font);
+  font-size: 10px;
+}
+
+.project_table_one_data .table_one_row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.15);
+}
+
+.project_table_one_data .table_one_col_left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_table_one_data .table_one_col_left .left_col {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.project_table_one_data .table_one_row span {
+  font-family: var(--primary-font);
+  color: #1e2749;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.project_table_one_data .table_one_col_left .col_left_3 {
+  width: 75%;
+  padding-left: 20px;
+}
+
+.project_table_one_data .table_one_col_left .col_left_1 {
+  width: 25%;
+}
+
+.project_table_one_data .table_one_col_right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-self: flex-end;
+}
+
+.project_table_one_data .table_one_col_right .right_col {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 20px;
+  position: relative;
+}
+
+.project_table_one_emty_data {
+  width: 100%;
+  height: 20px;
+  border-left: 1px solid rgb(0, 0, 0, 0.15);
+  border-right: 1px solid rgb(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1600px) {
+  .project_table_one_main_head .table_one_row {
+    height: 120px;
+  }
+
+  .project_table_one_main_head .table_one_row span {
+    font-size: 8px !important;
+    line-height: 16px;
+  }
+
+  .project_table_one_data .table_one_row span {
+    font-size: 8px !important;
+  }
+
+  .project_table_one_main_head .table_one_col_left .col_left_3 span {
+    padding-top: 70px;
+    line-height: 20px;
+  }
+
+  .project_table_one_main_head .table_one_col_right .right_col p span {
+    position: absolute;
+    bottom: 15px;
+    left: -53px;
+  }
+
+  .project_table_one_data .table_one_col_right .right_col {
+    padding-left: 15px;
+  }
+}
+
+/* project first table end */
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(20, 69, 148, 0.7);
+  margin: 30px 0;
+}
+
+/* project second table start */
+
+.project_table_two_main_head .table_two_row {
+  display: flex;
+  height: 70px;
+  background-color: var(--neavy-blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project_table_two_main_head .table_two_row span {
+  font-family: var(--primary-font);
+  font-size: 10px;
+  color: rgb(255, 255, 255, 0.8);
+  display: inline-block;
+  line-height: 18px;
+}
+
+.project_table_two_main_head .table_two_row .table_two_col_left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_two_main_head .table_two_row .table_two_col_right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_two_main_head .table_two_row .table_two_col_left .col_left {
+  display: flex;
+  /* align-items: center; */
+  padding: 15px 0 0 15px;
+  position: relative;
+}
+
+.table_two_row .table_two_col_left .col_left_3 {
+  width: 40%;
+  height: 100%;
+}
+
+.table_two_row .table_two_col_left .col_left_1 {
+  width: 13%;
+  height: 100%;
+}
+
+.table_two_row .table_two_col_left .col_left_2 {
+  width: 17%;
+  height: 100%;
+}
+
+.project_table_two_main_head .table_two_row .table_two_col_right .col_right {
+  display: flex;
+  /* align-items: center; */
+  padding: 15px 0 0 15px;
+  position: relative;
+}
+
+.table_two_row .table_two_col_right .col_right .col_left_border {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+}
+
+.table_two_row .table_two_col_right .col_right .col_right_border {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0;
+}
+
+.table_two_row .table_two_col_right .col_right_1 {
+  width: 11.66%;
+  height: 100%;
+}
+
+.table_two_row .table_two_col_right .col_right_2 {
+  width: 16.25%;
+  height: 100%;
+}
+
+.project_table_two_data .table_two_row {
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.project_table_two_data .table_two_row .table_two_col_left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_two_data .table_two_row .table_two_col_right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_two_data .table_two_row .table_two_col_left .col_left {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+}
+
+.project_table_two_data .table_two_row .table_two_col_right .col_right {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+}
+
+.project_table_two_data .table_two_row span {
+  font-size: 10px;
+  font-family: var(--primary-font);
+  color: #1e2749;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1600px) {
+  .project_table_two_main_head .table_two_row span {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  .project_table_two_data .table_two_row span {
+    font-size: 8px;
+  }
+
+  .project_table_two_main_head .table_two_row .table_two_col_left .col_left {
+    padding: 20px 0 0 15px;
+  }
+
+  .project_table_two_main_head
+    .table_two_row
+    .table_two_col_right
+    .col_right
+    span {
+    padding-top: 5px;
+  }
+
+  .project_table_two_main_head .table_two_row .table_two_col_right .col_right {
+    padding: 15px 0 0 10px;
+  }
+
+  .project_table_two_data .table_two_row .table_two_col_right .col_right {
+    padding-left: 10px;
+  }
+}
+
+/* project second table end */
+
+/* project third table start */
+
+.project_table_third_main_head .table_third_row {
+  display: flex;
+  height: 70px;
+  background-color: var(--neavy-blue);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project_table_third_main_head .table_third_row span {
+  font-family: var(--primary-font);
+  font-size: 10px;
+  color: rgb(255, 255, 255, 0.8);
+  display: inline-block;
+  line-height: 18px;
+}
+
+.project_table_third_main_head .table_third_row .table_third_col_left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_third_main_head .table_third_row .table_third_col_right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_third_main_head
+  .table_third_row
+  .table_third_col_left
+  .col_left {
+  display: flex;
+  /* align-items: center; */
+  padding: 15px 0 0 15px;
+  position: relative;
+}
+
+.table_third_row .table_third_col_left .col_left_3 {
+  width: 35%;
+  height: 100%;
+}
+
+.table_third_row .table_third_col_left .col_left_1 {
+  width: 15%;
+  height: 100%;
+}
+
+.table_third_row .table_third_col_left .col_left_2 {
+  width: 20%;
+  height: 100%;
+}
+
+.project_table_third_main_head
+  .table_third_row
+  .table_third_col_right
+  .col_right {
+  display: flex;
+  /* align-items: center; */
+  padding: 15px 0 0 15px;
+  position: relative;
+}
+
+.table_third_row .table_third_col_right .col_right .col_left_border {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+}
+
+.table_third_row .table_third_col_right .col_right .col_right_border {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0;
+}
+
+.table_third_row .table_third_col_right .col_right_1 {
+  width: 11.66%;
+  height: 100%;
+}
+
+.table_third_row .table_third_col_right .col_right_2 {
+  width: 16.25%;
+  height: 100%;
+}
+
+.project_table_third_data .table_third_row {
+  display: flex;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.project_table_third_data .table_third_row span {
+  font-size: 10px;
+  font-family: var(--primary-font);
+  color: #1e2749;
+  font-weight: 500;
+}
+
+.project_table_third_data .table_third_row .table_third_col_left {
+  width: 55%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_third_data .table_third_row .table_third_col_right {
+  width: 45%;
+  height: 100%;
+  display: flex;
+}
+
+.project_table_third_data .table_third_row .table_third_col_left .col_left {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+}
+
+.project_table_third_data .table_third_row .table_third_col_right .col_right {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  position: relative;
+}
+
+.third_table_last_row span {
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 1600px) {
+  .project_table_third_main_head .table_third_row span {
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  .project_table_third_data .table_third_row span {
+    font-size: 8px;
+  }
+
+  .project_table_third_main_head
+    .table_third_row
+    .table_third_col_left
+    .col_left {
+    padding: 20px 0 0 15px;
+  }
+
+  .project_table_third_main_head
+    .table_third_row
+    .table_third_col_right
+    .col_right
+    span {
+    padding-top: 5px;
+  }
+
+  .third_table_last_row span {
+    font-size: 10px !important;
+  }
+
+  .project_table_third_main_head
+    .table_third_row
+    .table_third_col_right
+    .col_right {
+    padding: 15px 0 0 10px;
+  }
+
+  .project_table_third_data .table_third_row .table_third_col_right .col_right {
+    padding-left: 10px;
+  }
+}
+
+/* project third table end */
+
+/* Project Program Cost Page End */

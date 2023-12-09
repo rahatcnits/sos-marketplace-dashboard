@@ -1,0 +1,178 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+.manage-user-tabs {
+  padding: 0px 30px 0px 27px;
+}
+
+.nav-item .nav-link {
+  position: relative;
+  /* background-color: rgba(20, 68, 146, 0.8); */
+  color: var(--blue) !important;
+  font-family: var(--primary-font) !important;
+  font-weight: 500 !important;
+  margin-right: 0;
+  padding-right: 20px;
+  border-radius: 0 !important;
+  border: none !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 0;
+}
+
+.border {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 0px;
+  bottom: 1px;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 1;
+}
+
+.nav-item .nav-link.active {
+  background-color: #144492 !important;
+  color: var(--white) !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+/* Tab Content Area */
+.breadcrumb {
+  font-size: 0.9rem !important;
+  padding-left: 0 !important;
+}
+
+.manage-btn {
+  display: flex !important;
+  justify-content: end !important;
+  text-align: right !important;
+}
+
+.manage-btn button {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Learners Card Section */
+.learners-card {
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.learners-card h6 {
+  color: #696969;
+  font-weight: 600;
+}
+
+.invite-btn {
+  display: flex !important;
+  justify-content: end !important;
+  text-align: right !important;
+}
+
+.invite-button {
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding: 6px 15px;
+  background-color: #fff;
+  font-size: 14px;
+  color: var(--blue);
+}
+
+/* Learner Card Single */
+.learner-card-single {
+  background-color: #edf3fd;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  min-height: 130px;
+  max-height: 160px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  width: calc(100% - 60px);
+}
+
+.profile-info h6 {
+  color: #1e2749c7;
+}
+
+.profile-info p {
+  font-size: 0.8rem;
+  color: #1e2749c7;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
+/* Follow Button */
+.follow {
+  margin-left: 10px;
+  text-align: end;
+}
+
+.follow-btn {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Faciliator Card */
+.faciliators-card {
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.faciliators-card h6 {
+  color: #696969;
+  font-weight: 600;
+}
+
+/* Coaches Card */
+.coaches-card {
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.coaches-card h6 {
+  color: #696969;
+  font-weight: 600;
+}
+/* Tab Content Area */

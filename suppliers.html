@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Marketplace - Suppliers</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/suppliers.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Suppliers</a></li>
+            <li>
+              <a href="./suppliers.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Products</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Services</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dashboard Home -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Suppliers</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- suppliers table start -->
+      <section id="suppliers_table">
+        <div class="table_options">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="table_short">
+            <div class="shorting_select">
+              <span>Sort by</span>
+              <div class="select_box">
+                <select name="" id="">
+                  <option value="rating">Alphabetical</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="add_user_btn">
+              <a href="#">
+                <i class="fa-solid fa-user-plus"></i>&nbsp Add a User
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- table -->
+        <table class="table table-responsive-lg">
+          <tbody>
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_1.png" alt="" />
+                </div>
+                <a href="#">Tech for Good</a>
+              </td>
+              <td>Social Enterprise</td>
+              <td>IT Hardware Supplier</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_2.png" alt="" />
+                </div>
+                <a href="#">Cable Containment</a>
+              </td>
+              <td>Indigenous Business</td>
+              <td>Conduit Products</td>
+              <td>VIC</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_3.png" alt="" />
+                </div>
+                <a href="#">MGM</a>
+              </td>
+              <td>First National Business</td>
+              <td>Telecommunications</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_4.png" alt="" />
+                </div>
+                <a href="#">OC Connections</a>
+              </td>
+              <td>Disability Social Enterprise</td>
+              <td>Document Management</td>
+              <td>VIC</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_5.png" alt="" />
+                </div>
+                <a href="#">IEBF</a>
+              </td>
+              <td>Indigenous Business</td>
+              <td>Call Centres</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_6.png" alt="" />
+                </div>
+                <a href="#">SheForce</a>
+              </td>
+              <td>Social Enterprise</td>
+              <td>Female Employment</td>
+              <td>VIC</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_7.png" alt="" />
+                </div>
+                <a href="#">Green Collect</a>
+              </td>
+              <td>Disability Social Enterprise</td>
+              <td>E-Waste.</td>
+              <td>VIC</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_8.png" alt="" />
+                </div>
+                <a href="#">Kulbardi</a>
+              </td>
+              <td>Indigenous Business</td>
+              <td>Stationary.</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_10.png" alt="" />
+                </div>
+                <a href="#">Brisk</a>
+              </td>
+              <td>Social Enterprise</td>
+              <td>IT Hardware Supplier</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="table_user">
+                <div>
+                  <img src="./assets/image/suppliers_table_img_9.png" alt="" />
+                </div>
+                <a href="#">SOS</a>
+              </td>
+              <td>Social Enterprise</td>
+              <td>Social Finance</td>
+              <td>National</td>
+              <td class="table_btn_row">
+                <a href="#" class="table_btn">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_1.svg"
+                  /></span>
+                </a>
+                <a href="#" class="table_btn ms-3">
+                  <span
+                    ><img src="./assets/icons/suppliers_table_btn_icon_2.svg"
+                  /></span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- suppliers table end -->
+    </section>
+    <!-- Dashboard Home -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>

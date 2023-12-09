@@ -1,0 +1,3085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Marketplace - Compliance Dashboard</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css"
+      integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Suppliers</a></li>
+            <li>
+              <a href="./suppliers.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Products</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Services</a
+              >
+            </li>
+            <li>
+              <a href="./product-page-fire.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Product Page
+                - Fire & Test</a
+              >
+            </li>
+            <li>
+              <a href="./product-service-fire-page.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Business Page
+                - Fire & Test</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./compliance-audit.html">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Compliance Audit</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Dashboard Home -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Compliance Dashboard</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Tabs & Contents Start -->
+      <section id="dashboard">
+        <div class="dashboard_tabs">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#social">
+                <span class="border"></span>
+                Social Procurement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#inclusion">
+                <span class="border"></span>
+                Indigenous Inclusion</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#MPSG">
+                <span class="border"></span>
+                MPSG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#disability">
+                <span class="border"></span>
+                Disability</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#workforce">
+                <span class="border"></span>
+                Priority Workforce</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#environmental">
+                <span class="border"></span>
+                Environment & Sustainability</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- social dashboard -->
+            <div class="tab-pane container-fluid active ps-0" id="social">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$1,680,000</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>37%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Compliance Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>52</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>79%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Status</div>
+                    <div>Social Enterprise and Inclusion</div>
+                    <div>Disability Social Enterprise and Inclusion</div>
+                    <div>Indigenous Business and Inclusion</div>
+                  </div>
+
+                  <div id="projectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Project Social Suppliers</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box pink"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div class="chart_container">
+                    <div id="suppliersChart" class="chart"></div>
+                  </div>
+
+                  <!-- <div id="suppliersChart" class="chart"></div> -->
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Contractor Spend Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box pink"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="constractorChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: center;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Priority Group (FTE) Contribution Status from Social
+                    Benefit Suppliers
+                  </p>
+
+                  <section class="priority_legend priority_legend_one">
+                    <div class="legends">
+                      <div class="legend_box color1"></div>
+                      <span>Youth 16-24</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color2"></div>
+                      <span>Mature Aged</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color3"></div>
+                      <span>Ex Justice</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color4"></div>
+                      <span>Asylum Seeker/Refugees & New Migrants</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color5"></div>
+                      <span>Long Term Unemployed</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color6"></div>
+                      <span>LGBTQI+</span>
+                    </div>
+                  </section>
+
+                  <section class="priority_legend priority_legend_two">
+                    <div class="legends">
+                      <div class="legend_box color7"></div>
+                      <span>Aboriginal & Torres Strait Islanders</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color8"></div>
+                      <span>Women</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color9"></div>
+                      <span>People Living with a Disability</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color10"></div>
+                      <span>Entrenched Disadvantage</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color11"></div>
+                      <span>Women Escaping Violence</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box color12"></div>
+                      <span>New Migrants</span>
+                    </div>
+                  </section>
+
+                  <div id="chartPie" class="chart"></div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Risk and Compliance Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div id="riskChart" class="chart" style="width: 197%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indigenous dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="inclusion">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Indigenous Business Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$910,000</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Indigenous Package Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>25%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Indigenous Compliance Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>65</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Indigenous Inclusion (FTE)
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>20%</span><br />
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Indigenous Inclusion Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="project_legend_text environment_legend_text"
+                    style="margin-top: -5px"
+                  >
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Overall Status
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Contractor Cultural Awareness Completion
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Indigenous Inclusion (FTE)
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Indigenous Business Spend
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      FTE Inclusion Training Employment Retention
+                    </div>
+                  </div>
+
+                  <div id="indigenousProjectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Project Number of Indigenous Businesses</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div
+                        class="legend_box indigenous_legend_box yellow"
+                      ></div>
+                      <span>Indigenous Training/Employment Provider</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box brown"></div>
+                      <span>Certified Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box red"></div>
+                      <span>Registered Indigenous Business</span>
+                    </div>
+                  </section>
+
+                  <div class="chart_container">
+                    <div id="indigenousSuppliersChart" class="chart"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Contractor - Indigenous Inclusion Spend Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box brown"></div>
+                      <span>Certified Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box red"></div>
+                      <span>Registered Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div
+                        class="legend_box indigenous_legend_box yellow"
+                      ></div>
+                      <span>Indigenous Training/ Employment Provider</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="indigenousConstractorChart"
+                      class="chart"
+                      style="width: 197%; height: 500px"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    FTE Contribution Status Indigenous Inclusion (Indigenous
+                    Businesses & Social Enterprises)
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          People Who Identify as
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div
+                              class="legend_box color1"
+                              style="background-color: #ff5438"
+                            ></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color2"
+                              style="background-color: #000091"
+                            ></div>
+                            <span>Mature Aged</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color3"
+                              style="background-color: #980090"
+                            ></div>
+                            <span>Ex Justice</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color4"
+                              style="background-color: #ff9f51"
+                            ></div>
+                            <span>LGBTQI+</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color5"
+                              style="background-color: #ffbdcb"
+                            ></div>
+                            <span>Women Escaping Violence</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color6"
+                              style="background-color: #a1dae8"
+                            ></div>
+                            <span>All Other</span>
+                          </div>
+                        </section>
+
+                        <div id="indigenousChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items one">
+                                <span
+                                  >Apprentice<br />
+                                  (1.0 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items two">
+                                <span
+                                  >Cadet <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items three">
+                                <span
+                                  >Intern <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items four">
+                                <span
+                                  >Work <br />
+                                  Experience <br />
+                                  (0.5 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="indigenousTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items five">
+                                <span
+                                  >Labour Hire <br />
+                                  (1.0 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items six">
+                                <span
+                                  >Part Time <br />
+                                  (1.2 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items seven">
+                                <span
+                                  >Casual <br />
+                                  (1.0 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items eight">
+                                <span
+                                  >Full Time <br />
+                                  (2.5 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="indigenousEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Indigenous Inclusion Risk and Compliance Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="indigenousRiskChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MPSG dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="MPSG">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total MPSG Workforce Hours</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>7,223</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package MPSG Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>37%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue MPSG Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>36</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project MPSG Compliance
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>35%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project MPSG Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Workforce Hours</div>
+                    <div>Female, Victorian MPSG Workforce</div>
+                    <div>Retained, Victorian MPSG Workforce</div>
+                    <div>New, Victorian MPSG Workforce</div>
+                  </div>
+
+                  <div id="mpsgProjectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name" style="align-items: flex-start">
+                    <p>
+                      Total MPSG Hours Contributed by Social Benefit Suppliers
+                    </p>
+                    <p style="width: 100px; text-align: end">By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box green"></div>
+                      <span>Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box blue"></div>
+                      <span>Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box indigenous_legend_box pink"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div class="chart_container">
+                    <div id="mpsgSuppliersChart" class="chart"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: center;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Breakdown of Project Workforce Hours
+                  </p>
+
+                  <div id="mpsgMajorProjectChart" class="chart">
+                    <table class="breakdown_chart_table">
+                      <thead>
+                        <tr>
+                          <td colspan="8" style="background-color: #1444921a">
+                            <b
+                              style="
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 600;
+                              "
+                              >Workforce Hours Within:</b
+                            >
+                            Victoria (VIPP, LJF)
+                          </td>
+                          <th
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            Total
+                          </th>
+                          <td colspan="8" style="background-color: #1444921a">
+                            <b
+                              style="
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 600;
+                              "
+                              >Workforce Hours Outside:</b
+                            >
+                            Victoria (VIPP, LJF)
+                          </td>
+                          <th
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            Total
+                          </th>
+                        </tr>
+                        <tr>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Standard <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Apprentice <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Internship <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Cadetship <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            All
+                          </th>
+
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Standard <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Internship <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Cadetship <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.9);
+                              font-weight: 600;
+                            "
+                            colspan="2"
+                          >
+                            Apprentice <br />
+                            Roles
+                          </th>
+                          <th
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            All
+                          </th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            LIDP
+                          </td>
+                          <td
+                            style="
+                              background-color: #f6f6f6;
+                              color: rgba(0, 0, 0, 0.7);
+                              font-weight: 500;
+                            "
+                          >
+                            Actual
+                          </td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            Actual
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="background-color: #ff49ed1a" colspan="18">
+                            <b
+                              style="
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 600;
+                              "
+                              >Retained:</b
+                            >
+                            Roles which have been retained through the award of
+                            the project
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>80%</td>
+                          <td style="background-color: rgba(0, 189, 138, 0.2)">
+                            83.5%
+                          </td>
+                          <td>5.5%</td>
+                          <td style="background-color: rgba(0, 189, 138, 0.2)">
+                            6%
+                          </td>
+                          <td>2.5%</td>
+                          <td style="background-color: #f3be0033">1%</td>
+                          <td>2.5%</td>
+                          <td style="background-color: #f3be0033">1%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            91.5%
+                          </td>
+                          <td>2%</td>
+                          <td style="background-color: #f3be0033">3%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            3%
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            style="background-color: rgba(0, 189, 138, 0.1)"
+                            colspan="18"
+                          >
+                            <b
+                              style="
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 600;
+                              "
+                              >New:</b
+                            >
+                            Roles which have been retained through the award of
+                            the project
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>8%</td>
+                          <td style="background-color: #ff49ed33">4%</td>
+                          <td>0.5%</td>
+                          <td style="background-color: #f3be0033">0%</td>
+                          <td>0.5%</td>
+                          <td style="background-color: #f3be0033">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">1%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            5%
+                          </td>
+                          <td>0.5%</td>
+                          <td style="background-color: #00bc8b33">0.5%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            0.5%
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td
+                            style="background-color: #144492; color: #fff"
+                            colspan="8"
+                          ></td>
+                          <td style="background-color: #144492; color: #fff">
+                            96.5%
+                          </td>
+
+                          <td
+                            style="background-color: #144492; color: #fff"
+                            colspan="8"
+                          ></td>
+                          <td style="background-color: #144492; color: #fff">
+                            3.5%
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td style="background-color: #f3be001a" colspan="18">
+                            <b
+                              style="
+                                color: rgba(0, 0, 0, 0.8);
+                                font-weight: 600;
+                              "
+                              >Progressed:</b
+                            >
+                            Roles which have been retained through the award of
+                            the project
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>20%</td>
+                          <td style="background-color: #00bc8b33">14%</td>
+                          <td>1.5%</td>
+                          <td style="background-color: #ff49ed33">0%</td>
+                          <td>0.5%</td>
+                          <td style="background-color: #00bc8b33">1%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            15%
+                          </td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td>0%</td>
+                          <td style="background-color: #00bc8b33">0%</td>
+                          <td
+                            style="
+                              background-color: #037bff;
+                              color: #fff;
+                              font-weight: 400;
+                            "
+                          >
+                            0%
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Workforce Hours: <span style="color: #000000">80,258</span>
+                  </p>
+
+                  <div class="workforce_items">
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>83%</h4>
+                        <p>
+                          Local <br />
+                          Workforce
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_2.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>16%</h4>
+                        <p>
+                          Building <br />
+                          Equality <br />
+                          Policy
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_3.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>10%</h4>
+                        <p>
+                          New <br />
+                          Employee <br />
+                          Hours
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_4.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>2%</h4>
+                        <p>
+                          Cadet <br />
+                          Workforce <br />
+                          Hours
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_5.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>1%</h4>
+                        <p>
+                          Intern <br />
+                          Workforce <br />
+                          Hours
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_6.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>6%</h4>
+                        <p>
+                          Apprentice <br />
+                          Workforce <br />
+                          Hours
+                        </p>
+                      </div>
+                    </div>
+                    <div class="workforce_item">
+                      <div class="worforce_item_icon">
+                        <img
+                          src="./assets/icons/mpsg_worfource_icon_7.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="worforce_content">
+                        <h4>2%</h4>
+                        <p>
+                          Progression <br />
+                          Into New <br />
+                          Role
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total MPSG -Priority Group (FTE) Contribution Status
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          People Who Identify as
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div class="legend_box color1"></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color2"></div>
+                            <span>Mature Aged</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color3"></div>
+                            <span>Ex Justice</span>
+                          </div>
+                          <div class="legends" style="align-items: flex-start">
+                            <div class="legend_box color4"></div>
+                            <span style="margin-top: -2px"
+                              >Asylum Seeker/Refugees & <br />
+                              New Migrants</span
+                            >
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color5"></div>
+                            <span>Long Term Unemployed</span>
+                          </div>
+                          <div class="legends">
+                            <div class="legend_box color6"></div>
+                            <span>LGBTQI+</span>
+                          </div>
+                        </section>
+
+                        <div id="mpsgChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items one">
+                                <span
+                                  >Intern <br />
+                                  (2 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items two">
+                                <span
+                                  >Cadet <br />
+                                  (1.5 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items three">
+                                <span
+                                  >Apprentice <br />
+                                  (2.5 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items four">
+                                <span
+                                  >Work <br />
+                                  Experience <br />
+                                  (1.8 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div id="mpsgTrainingChartPie" class="chart"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items five">
+                                <span
+                                  >Labour Hire <br />
+                                  (1.5 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items six">
+                                <span
+                                  >Part Time <br />
+                                  (2.0 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items seven">
+                                <span
+                                  >Casual <br />
+                                  (1.3 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items eight">
+                                <span
+                                  >Full Time <br />
+                                  (3.0 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="mpsgEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- disability dashboard Start -->
+            <div class="tab-pane container-fluid fade ps-0" id="disability">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Disability Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$565,000</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Disability Compliance Progress</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>43%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Disability Compliance Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>23</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Disability Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>40%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Disability Inclusion Risk levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Status</div>
+                    <div>Disability Social Enterprise Inclusion</div>
+                    <div>Training - Disability Inclusion</div>
+                    <div>Employment -Disability Inclusion</div>
+                  </div>
+
+                  <div id="disabilityProjectRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name" style="align-items: flex-start">
+                    <p>Total Project Number of Disability Suppliers</p>
+                    <p style="width: 100px; text-align: right">By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box red"></div>
+                      <span>Disability Training Providers</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box sky"></div>
+                      <span>Disability Employment Providers</span>
+                    </div>
+                    <div class="legends">
+                      <div
+                        class="legend_box disability_legend_box violet"
+                      ></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div class="chart_container">
+                    <div id="disabilityTotalProjectChart" class="chart"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Contractor - Disability Inclusion Spend Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div
+                        class="legend_box disability_legend_box violet"
+                      ></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box red"></div>
+                      <span>Disability Training Provider</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box sky"></div>
+                      <span>Disability Employment</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="disabilityConstractorChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Priority Group Inclusion
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          People Who Identify as:
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div
+                              class="legend_box color1"
+                              style="background-color: #ff5438"
+                            ></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color2"
+                              style="background-color: #000091"
+                            ></div>
+                            <span>Mature Aged</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color3"
+                              style="background-color: #980090"
+                            ></div>
+                            <span>Ex Justice</span>
+                          </div>
+                          <div class="legends" style="align-items: flex-start">
+                            <div
+                              class="legend_box color4"
+                              style="background-color: #ff9f51"
+                            ></div>
+                            <span style="margin-top: -2px"
+                              >Asylum Seeker/Refugees & <br />
+                              New Migrants</span
+                            >
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color5"
+                              style="background-color: #a1dae8"
+                            ></div>
+                            <span>Long Term Unemployed</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color6"
+                              style="background-color: #ffbdcb"
+                            ></div>
+                            <span>Aboriginal & Torres Strait Islander</span>
+                          </div>
+                        </section>
+
+                        <div id="disabilityChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items one">
+                                <span
+                                  >Trainee <br />
+                                  (1.2 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items two">
+                                <span
+                                  >Cadet <br />
+                                  0.4 FTE</span
+                                >
+                              </div>
+                              <div class="label_items three">
+                                <span
+                                  >Apprentice <br />
+                                  1.5 FTE</span
+                                >
+                              </div>
+                              <div class="label_items four">
+                                <span
+                                  >Work <br />
+                                  Experience <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="disabilityTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items five">
+                                <span> 1.5 FTE</span>
+                              </div>
+
+                              <div class="label_items six">
+                                <span
+                                  >Part Time <br />
+                                  (1.0 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items seven">
+                                <span
+                                  >Casual <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items eight">
+                                <span
+                                  >Labour Hire <br />
+                                  (0.3 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="disabilityEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Disability Inclusion Risk & Compliance Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="disabilityRiskChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- disability dashboard End -->
+
+            <!-- Priority Workforce dashboard Start -->
+            <div class="tab-pane container-fluid fade ps-0" id="workforce">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total FTE Priority Workforce Status</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>4,126</span>
+                      Hrs
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>Package Compliance Progress- Priority Workforce</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>63%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Priority Workforce (FTE) Milestones</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>39</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project - Priority Workforce Compliance Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>58%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Project Priority Workforce Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div class="project_legend_text">
+                    <div>Overall Status of Priority Workforce</div>
+                    <div>Employment</div>
+                    <div>Training</div>
+                    <div>Diversity & Inclusion Training</div>
+                  </div>
+
+                  <div id="priorityProjectRiskChart" class="chart"></div>
+                </div>
+
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Social Benefit Suppliers</p>
+                    <p>By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box green"></div>
+                      <span>Social Enterprise</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box blue"></div>
+                      <span>Indigenous Business</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box pink"></div>
+                      <span>Disability Social Enterprise</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll; overflow-y: hidden"
+                  >
+                    <div
+                      id="priorityTotalProjectChart"
+                      class="chart"
+                      style="width: 110%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Total Contractor Priority Workforce (FTE) Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box green"></div>
+                      <span>Employed</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box blue"></div>
+                      <span>Training</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box disability_legend_box pink"></div>
+                      <span>MPSG</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="priorityConstractorChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                    "
+                  >
+                    Total Priority Group Inclusion
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="chart_content">
+                        <p style="color: #000000; margin: 30px 0">
+                          People Who Identify as:
+                        </p>
+                        <section class="priority_legend indigenous_legend">
+                          <div class="legends">
+                            <div
+                              class="legend_box color1"
+                              style="background-color: #ff5438"
+                            ></div>
+                            <span>Youth 16-24</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color2"
+                              style="background-color: #000091"
+                            ></div>
+                            <span>Mature Aged</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color3"
+                              style="background-color: #980090"
+                            ></div>
+                            <span>Ex Justice</span>
+                          </div>
+                          <div class="legends" style="align-items: flex-start">
+                            <div
+                              class="legend_box color4"
+                              style="background-color: #ff9f51"
+                            ></div>
+                            <span style="margin-top: -2px"
+                              >Asylum Seeker/Refugees & <br />
+                              New Migrants</span
+                            >
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color5"
+                              style="background-color: #a1dae8"
+                            ></div>
+                            <span>Long Term Unemployed</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color5"
+                              style="background-color: #ffbdcb"
+                            ></div>
+                            <span>Disadvantaged</span>
+                          </div>
+                          <div class="legends">
+                            <div
+                              class="legend_box color6"
+                              style="background-color: #ff6a8a"
+                            ></div>
+                            <span>Aboriginal & Torres Strait Islander</span>
+                          </div>
+                        </section>
+
+                        <div id="priorityChartPie" class="chart"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Training Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items one">
+                                <span
+                                  >Trainee <br />
+                                  (1.2 FTE)</span
+                                >
+                              </div>
+
+                              <div class="label_items two">
+                                <span
+                                  >Cadet <br />
+                                  0.4 FTE</span
+                                >
+                              </div>
+                              <div class="label_items three">
+                                <span
+                                  >Apprentice <br />
+                                  1.5 FTE</span
+                                >
+                              </div>
+                              <div class="label_items four">
+                                <span
+                                  >Work <br />
+                                  Experience <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="priorityTrainingChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart_content">
+                            <p
+                              style="
+                                color: #000000;
+                                text-align: center;
+                                margin: 30px 0;
+                              "
+                            >
+                              Employment Type
+                            </p>
+
+                            <div class="pie_chart_labels">
+                              <div class="label_items five">
+                                <span>1.5 FTE</span>
+                              </div>
+
+                              <div class="label_items six">
+                                <span
+                                  >Part Time <br />
+                                  (1.0 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items seven">
+                                <span
+                                  >Casual <br />
+                                  (0.4 FTE)</span
+                                >
+                              </div>
+                              <div class="label_items eight">
+                                <span
+                                  >Labour <br />
+                                  Hire <br />
+                                  (0.3 FTE)</span
+                                >
+                              </div>
+                            </div>
+
+                            <div
+                              id="priorityEmploymentChartPie"
+                              class="chart"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <div class="chart_name">
+                    <p>Priority Workforce Risk and Compliance Status</p>
+                    <p>By Trade</p>
+                  </div>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>On Track</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll"
+                  >
+                    <div
+                      id="priorityRiskChart"
+                      class="chart"
+                      style="width: 197%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Priority Workforce dashboard End -->
+
+            <!-- Environmental dashboard -->
+            <div class="tab-pane container-fluid fade ps-0" id="environmental">
+              <div class="row p-0">
+                <div class="col-lg-3">
+                  <div class="dashboard_card green">
+                    <h4>Total Project Environment & Sustainability Spend</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>$72,450</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card yellow">
+                    <h4>
+                      Package Environmental & Sustainability Compliance Progress
+                    </h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>33%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card red">
+                    <h4>Overdue Environmental & Sustainability Compliance</h4>
+                    <p><i class="fa-solid fa-filter"></i>1 Filter</p>
+                    <div>
+                      <span>27</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="dashboard_card black">
+                    <h4 style="margin-bottom: 25px">
+                      Total Project Environmental & Sustainability Compliance
+                      Progress
+                    </h4>
+                    <!-- <p><i class="fa-solid fa-filter"></i>1 Filter</p> -->
+                    <div>
+                      <span>39%</span>
+                      Total
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chart start -->
+              <div class="chart_one">
+                <div class="chart_box">
+                  <p style="color: rgba(0, 0, 0, 0.7); font-weight: 600">
+                    Sustainability Goals Risk Levels
+                  </p>
+
+                  <section class="target_status_legend">
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Completion Timeline</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Low Risk</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box yellow"></div>
+                      <span>Medium</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box red"></div>
+                      <span>High Risk</span>
+                    </div>
+                  </section>
+
+                  <div
+                    class="project_legend_text environment_legend_text"
+                    style="margin-top: -5px"
+                  >
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Overall Sustainability Status
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Inbetween Recycling and Circular Economy
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Renewable Energy
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Carbon Emissions
+                    </div>
+                    <div style="padding-bottom: 0px; padding-top: -1px">
+                      Landfill Waste
+                    </div>
+                  </div>
+
+                  <div id="environmentalRiskChart" class="chart"></div>
+                </div>
+                <div class="chart_box">
+                  <div class="chart_name" style="align-items: flex-start">
+                    <p>Total Project Environmental Achievements</p>
+                    <p style="width: 100px; text-align: right">By Month</p>
+                  </div>
+
+                  <section class="constractor_legend">
+                    <div class="legends">
+                      <div class="legend_box green"></div>
+                      <span>Waste Diverted From Landfill</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box blue"></div>
+                      <span>Recycled Content</span>
+                    </div>
+                    <div class="legends">
+                      <div class="legend_box lightGreen"></div>
+                      <span
+                        >Carbon Eliminated, Reduced, Captured and Offset</span
+                      >
+                    </div>
+                  </section>
+                  <div
+                    class="chart_container"
+                    style="width: 100%; overflow-x: scroll; overflow-y: hidden"
+                  >
+                    <div
+                      id="environmentalSuppliersChart"
+                      class="chart"
+                      style="width: 150%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Total Project Outcomes -->
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    Total Project Outcomes
+                  </p>
+
+                  <div id="outcomesChart" class="chart">
+                    <div class="chart_labels">
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$50k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$40k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$30k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$20k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$10k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+                      <div class="chart_label_item">
+                        <div class="chart_label_text">$0k</div>
+                        <div class="chart_label_border"></div>
+                      </div>
+
+                      <div class="chart_series_items">
+                        <div class="chart_series_item" style="bottom: -10px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_1.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">55 <br />Kit</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 130px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -60px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_2.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">5 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 80px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -80px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_3.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">18 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 60px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: 10px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_4.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">13 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 150px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -15px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_5.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">20 <br />Hec</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 125px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -35px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_6.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">120 <br />M3</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 105px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -30px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_7.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">6 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 110px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: 10px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_8.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">120 <br />Deg</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 150px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -20px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_9.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">180 <br />Kw</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 120px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -35px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_10.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">3 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 105px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: -10px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_11.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">4 <br />T</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 130px"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="chart_series_item" style="bottom: 10px">
+                          <div class="chart_series_icon">
+                            <div class="icon">
+                              <img
+                                src="./assets/icons/outcomes_chart_icon_12.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ellipse">3 <br />Cer</div>
+                            <div
+                              class="chart_series_border"
+                              style="height: 150px"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart_legend">
+                      <span>Rainwater & Reuse of Waste Water</span>
+                      <span>Recycle Content</span>
+                      <span>Waste Diverted From Landfill</span>
+                      <span>Carbon Emissions</span>
+                      <span>Revegetation</span>
+                      <span>Decontamination of Soil</span>
+                      <span>Use of Recycled Plastics & Materials</span>
+                      <span>Stages of Circularities</span>
+                      <span>Renewable Energy</span>
+                      <span>Product Stewardship</span>
+                      <span>Total UN SDG's Achieved</span>
+                      <span>Certifications Obtained</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart_two">
+                <div class="chart_box">
+                  <p
+                    style="
+                      text-align: left;
+                      color: rgba(0, 0, 0, 0.7);
+                      font-weight: 600;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    Summary of Environmental Benefits
+                  </p>
+
+                  <div class="environmental_wrapper">
+                    <div class="environmental_chart_items">
+                      <p>Waste Reduction (Tonnage)</p>
+
+                      <div id="environmentalWasteChart" class="chart"></div>
+                      <div class="lebel_total_value">32T</div>
+
+                      <section class="environmental_legend">
+                        <div class="legends">
+                          <div class="legend_box color1"></div>
+                          <span>Recycled Content</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color2"></div>
+                          <span>Diversion of Waste</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color3"></div>
+                          <span>Product Stewardship</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color4"></div>
+                          <span>Renewable Substitutes</span>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="environmental_chart_items">
+                      <p>
+                        Environmental Regeneration <br />
+                        Equivalent Hectares
+                      </p>
+
+                      <div
+                        id="environmentalRegenerationChart"
+                        class="chart"
+                      ></div>
+
+                      <section class="environmental_legend">
+                        <div class="legends">
+                          <div class="legend_box color5"></div>
+                          <span
+                            >Forest and Habitat <br />
+                            Regeneration</span
+                          >
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color6"></div>
+                          <span
+                            >Contamination and Soil <br />
+                            Remediation</span
+                          >
+                        </div>
+                        <div class="legends" style="align-items: flex-start">
+                          <div class="legend_box color7"></div>
+                          <span
+                            >Virgin Plastics and Materials <br />
+                            substituted with Organics</span
+                          >
+                        </div>
+                        <div class="lebel_total_value">21.2H</div>
+                        <div class="legends">
+                          <div class="legend_box color8"></div>
+                          <span
+                            >Water Harvesting, Reuse & <br />
+                            Reduction</span
+                          >
+                        </div>
+                      </section>
+                    </div>
+
+                    <!-- Renewable Energy -->
+                    <div class="environmental_chart_items">
+                      <p>Renewable Energy</p>
+
+                      <div id="environmentalRenewableChart" class="chart"></div>
+
+                      <div class="lebel_total_value">43%</div>
+
+                      <section class="environmental_legend">
+                        <div class="legends">
+                          <div class="legend_box color9"></div>
+                          <span>Solar</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color10"></div>
+                          <span>BESS</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color11"></div>
+                          <span>Wind</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color12"></div>
+                          <span>Other</span>
+                        </div>
+                      </section>
+                    </div>
+
+                    <!-- Carbon Emissions Reduction -->
+                    <div class="environmental_chart_items">
+                      <p>Carbon Emissions Reduction</p>
+
+                      <div id="environmentalCarbonChart" class="chart"></div>
+                      <div class="lebel_total_value">56T</div>
+
+                      <section class="environmental_legend">
+                        <div class="legends">
+                          <div class="legend_box color13"></div>
+                          <span
+                            >Electric or Hydrogen <br />Vehicles/Machinery</span
+                          >
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color14"></div>
+                          <span>Renewable Energy</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color15"></div>
+                          <span>Manufacturing Solutions</span>
+                        </div>
+                        <div class="legends">
+                          <div class="legend_box color16"></div>
+                          <span>Bio Fuel</span>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Dashboard Home -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.3/apexcharts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/pieChart.js"></script>
+    <script src="./js/barChart.js"></script>
+    <script src="./js/indigenousChart.js"></script>
+    <script src="./js/mpsgChart.js"></script>
+    <script src="./js/disabilityChart.js"></script>
+    <script src="./js/priorityChart.js"></script>
+    <script src="./js/environmentalChart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Marketplace - Manage Users</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/projectComplianceTargets.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Suppliers
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Project Compliance Targets Page -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Project Compliance Targets</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- project compliance start -->
+      <div class="project_compliance">
+        <div class="container-fluid">
+          <!-- project compliance user start -->
+          <div class="project_cpmpliance_user">
+            <div class="project_cpmpliance_user_avatar">
+              <img
+                src="./assets/image/project_compliance_user_avatar.png"
+                alt=""
+              />
+            </div>
+            <div class="project_cpmpliance_user_content">
+              <h5>Guy Hawkins</h5>
+              <p>Modscape</p>
+            </div>
+          </div>
+          <!-- project compliance user end -->
+
+          <!-- project compliance table start -->
+          <div class="project_compliance_table">
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Project Summary
+              </h4>
+            </div>
+
+            <div class="project_table_body">
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Contractor/Buyer Name</p>
+                </div>
+                <div class="project_table_row_right">
+                  <p>
+                    Contractor/Buyer Name Auto Populate from Buyer Profile
+                  </p>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Project Name</p>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Project Client</p>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Site Location</p>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Total Project Duration in Weeks</p>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <select name="" id="">
+                    <option value="Project Stages">Project Stages</option>
+                    <option value="Project Stages 1">Project Stages 1</option>
+                    <option value="Project Stages 2">Project Stages 2</option>
+                  </select>
+                </div>
+                <div class="project_table_row_right">
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Project Costs
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Cost
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body">
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Total Project Cost</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_single_input">
+                    <span class="table_data_left_sign">$</span>
+                    <input type="text" placeholder="Enter Value" />
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Profit % and $</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Overheads and Supervision</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Prelims as % of Total</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Cost of Trades (excl. Prelims)</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Project Stages Costings -->
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Project Stages Costings
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Stage
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body project_stage_costing">
+              <div class="project_table_row">
+                <div
+                  class="project_table_row_left project_stage_costing_table_head"
+                >
+                  <p>Multiple Stage Project</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <p>Name of Stage</p>
+                    </div>
+                    <div class="table_data table_data_right">
+                      <p>Value of Stage</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Total Project Cost - Stage 1</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>-</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Social Procurement Framework (SPF) Deliverables -->
+            <div class="project_compliance_table_header mb-4">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Social Procurement Framework (SPF) Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Social Procurement Deliverable
+                </button>
+              </div>
+            </div>
+            <div class="project_table_row" style="border-top: 1px solid rgba(0, 0, 0, 0.15);">
+              <div class="project_table_row_left">
+                <p>Total % of Contract Spent with Aboriginal Businesses (AB)</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">2.5%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hhours Carried out by Victorian Aboriginal</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">2.5%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Contract Spent with Social Enterprises (SE)</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">2.5%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours Carried Out by Victorian From Disadvantaged Backgrounds</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">3%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Contract Spent with Disability Social Enterprises (DSE)</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">1%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours Carried Out by Victorians with a Disibility</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign">1%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Local Industry Development Plan (LIDP) Deliverables -->
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Local Industry Development Plan (LIDP) Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Stage
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body project_stage_costing">
+              <div class="project_table_row">
+                <div
+                  class="project_table_row_left project_stage_costing_table_head"
+                >
+                  <p>Total Project Required Local Content (ANZ)</p>
+                </div>
+
+                <div class="table-data-center">
+                  <p>Auto Populate Total Project Value</p>
+                </div>
+                
+                <div class="project_table_row_right justify-content-end">
+                  <div class="table_row_right_wrapper justify-content-end">
+                    <div class="table_data table_data_right justify-content-end">
+                      <p>%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Delivery Stage</p>
+                </div>
+                <p style="margin-left: -80px;"> - </p>
+                <div class="project_table_row_right" style="margin-left: 80px;">
+                  <div class="table_row_right_wrapper justify-content-end">
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">92%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left">
+                  <p>Operational Stage</p>
+                </div>
+                <p style="margin-left: -80px;"> - </p>
+                <div class="project_table_row_right" style="margin-left: 80px;">
+                  <div class="table_row_right_wrapper justify-content-end">
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign">85%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Major Project Skills Guarantee Deliverables (MPSG) Deliverables -->
+            <div class="project_compliance_table_header mb-4">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Major Project Skills Guarantee Deliverables (MPSG) Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Deliverable
+                </button>
+              </div>
+            </div>
+            <div class="project_table_row" style="border-top: 1px solid rgba(0, 0, 0, 0.15);">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Apprentices</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">8%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">7,146 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Intern</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">2%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">1,760 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Cadet</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">2%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">1,660 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Standard Employee</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">88%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">70,128 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours for Retained Employment Hours</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">80%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">64,240 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Project Requirements for New Employment Hours or Positions</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">20%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">16,045 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="divider"></div>
+
+            <!-- Major Project Skills Guarantee Deliverables (MPSG) Deliverables -->
+            <div class="project_compliance_table_header mb-4">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Building Equality Policy (BEP) Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project BEP Deliverable
+                </button>
+              </div>
+            </div>
+            <div class="project_table_row" style="border-top: 1px solid rgba(0, 0, 0, 0.15);">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Females</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">18%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">2,488 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Females in Senior Leadership or Management</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">20%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">508 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Female Trades</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">3%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">320 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_table_row">
+              <div class="project_table_row_left">
+                <p>Total % of Workforce Hours by Female Trainees, Cadets and Apprentices</p>
+              </div>
+              <div class="project_table_row_right">
+                <div class="table_row_right_wrapper justify-content-end">
+                  <div class="table_data table_data_left">
+                    <span class="table_data_right_sign2">25%</span>
+                    <input type="text" placeholder="" />
+                  </div>
+                  <div class="table_data table_data_right">
+                    <input type="text" />
+                    <span class="table_data_right_sign2">1,660 Hrs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="divider"></div>
+
+            <!-- Environmental Sustainability Deliverables -->
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Environmental Sustainability Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Project Environmental Deliverable
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body project_stage_costing">
+              <div class="project_table_row">
+                <div
+                  class="project_table_row_left project_stage_costing_table_head"
+                >
+                  <p>Detail Outcome Requirements</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <p style="float: left;">Value</p>
+                    </div>
+                    <div class="table_data table_data_right">
+                      <p style="float: left;">Auto Generated Portion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left pe-4">
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left pe-4">
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="divider"></div>
+
+            <!-- Other Project Deliverables -->
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Other Project Deliverables
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Other Project Deliverable
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body project_stage_costing">
+              <div class="project_table_row">
+                <div
+                  class="project_table_row_left project_stage_costing_table_head"
+                >
+                  <p>Detail Outcome Requirements</p>
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <p style="float: left;">Value</p>
+                    </div>
+                    <div class="table_data table_data_right">
+                      <p style="float: left;">Auto Generated Portion</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left pe-4">
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left pe-4">
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="project_table_row_right">
+                  <div class="table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right">
+                      <input type="text" />
+                      <span class="table_data_right_sign"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Work Package Breakdown Start -->
+
+            <div class="project_compliance_table_header">
+              <h4>
+                <span><i class="fa-solid fa-sort-down"></i></span>
+                Work Package Breakdown
+              </h4>
+
+              <div class="project_add_button">
+                <button>
+                  <i class="fa-solid fa-plus"></i> Add Work Package
+                </button>
+              </div>
+            </div>
+
+            <div class="project_table_body project_stage_costing">
+              <div class="project_table_row">
+                <div
+                  class="project_table_row_left project_work_table_row_left project_stage_costing_table_head"
+                >
+                </div>
+                <div class="project_table_row_right project_work_table_row_right">
+                  <div class="table_row_right_wrapper project_table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <p style="float: left;">Package Cost</p>
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center; font-weight: 600;">
+                      % of Total Cost
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center; font-weight: 600;">
+                      Contract Type
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left project_work_table_row_left pe-4">
+                  <p>Stage 1 - Overheads and Supervision</p>
+                  <select name="" id="">
+                    <option value="Select">Select</option>
+                    <option value="De Select">De Select</option>
+                  </select>
+                </div>
+                <div class="project_table_row_right project_work_table_row_right">
+                  <div class="table_row_right_wrapper project_table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center; color: rgba(30, 39, 73, 0.7);">
+                      Auto Generated %
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center;">
+                      <select name="" id="">
+                        <option value="Select">Select</option>
+                        <option value="De Select">De Select</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project_table_row">
+                <div class="project_table_row_left project_work_table_row_left pe-4">
+                  <select name="" id="">
+                    <option value="Site Establishment">Site Establishment</option>
+                    <option value="De Select">De Select</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="Select">Select</option>
+                    <option value="De Select">De Select</option>
+                  </select>
+                </div>
+                
+                <div class="project_table_row_right project_work_table_row_right">
+                  <div class="table_row_right_wrapper project_table_row_right_wrapper">
+                    <div class="table_data table_data_left">
+                      <span class="table_data_left_sign">$</span>
+                      <input type="text" placeholder="Enter Value" />
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center; color: rgba(30, 39, 73, 0.7);">
+                      Auto Generated %
+                    </div>
+                    <div class="table_data table_data_right" style="text-align: center;">
+                      <select name="" id="">
+                        <option value="Select">Select</option>
+                        <option value="De Select">De Select</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <!-- project compliance table end -->
+        </div>
+      </div>
+      <!-- project compliance end -->
+    </section>
+    <!-- Project Compliance Targets Page -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>

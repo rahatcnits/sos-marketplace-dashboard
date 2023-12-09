@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page - Emotions</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/product-service-business-emotions.css"
+    />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li>
+              <a href="./product.html"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Product</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Services</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Product Service Fire Page -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Business Profile</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <div class="product_service_wrapper">
+        <!-- Product Hero Start -->
+        <div class="product_hero">
+          <img
+            src="./assets/image/product_service_business_emotions_header_banner.png"
+            alt=""
+            class="product_hero_bg"
+          />
+
+          <div class="product_hero_content">
+            <img
+              src="./assets/image/product_brand_logo_1.png"
+              alt=""
+              class="product_logo"
+            />
+            <h1>Fire and Test Australasia PTY LTD</h1>
+          </div>
+        </div>
+        <!-- Product Hero End -->
+
+        <!-- Product About US Start -->
+        <div class="product_about">
+          <div class="about_col_left">
+            <div class="about_content">
+              <h2>About Us</h2>
+              <p>
+                The idea for émotions was born out of the search for a tool to
+                teach my young son about emotions and feelings around the time
+                of the tragic loss of a loved one to suicide. I couldn't find a
+                suitable emotions chart and ended up making one with a
+                freelancer. Then there was the great toilet paper rush of 2020,
+                and the ideas came together like that.
+              </p>
+              <p>
+                An entrepreneur at heart, I launched émotions as a social
+                enterprise because together we are stronger. Together we can
+                drive positive social change for emotional well-being.
+              </p>
+              <p>
+                Our product packaging is a nod towards emotions, mental health
+                and being human. Our mission is to redirect spending on these
+                everyday items and then donate 50% of the profit to Beyond Blue,
+                Lifeline & The Black Dog Institute who support everyday
+                prevalent mental health issues.
+              </p>
+
+              <div class="about_btn">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="about_col_right">
+            <div class="about_chart">
+              <div class="product_about_chart_head">
+                <h4>Sustainability Goal</h4>
+              </div>
+
+              <div class="product_about_chart">
+                <div id="productFireFinancialGoalPieChart"></div>
+
+                <div class="product_chart_lagend">
+                  <img src="./assets/icons/product_chart_icon1.svg" alt="" />
+                  <span
+                    >Financial Goal <i class="fa-solid fa-circle-info"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="product_about_chart">
+                <div id="productFireEnvironmentalGoalPieChart"></div>
+
+                <div class="product_chart_lagend">
+                  <img src="./assets/icons/product_chart_icon2.svg" alt="" />
+                  <span
+                    >Environmental Goal <i class="fa-solid fa-circle-info"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="product_about_chart">
+                <div id="productFireEmploymentGoalPieChart"></div>
+
+                <div class="product_chart_lagend">
+                  <img src="./assets/icons/product_chart_icon3.svg" alt="" />
+                  <span
+                    >Employment Goal <i class="fa-solid fa-circle-info"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product About US End -->
+
+        <!-- Product Fire Page Video Start -->
+        <div class="product_fire_video">
+          <img src="./assets/image/product_video_img.png" alt="" />
+        </div>
+        <!-- Product Fire Page Video End -->
+
+        <!-- Product Fire Page Specialities Start -->
+        <div class="product_specialities">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product_specialities_card">
+                <div class="product_specialities_card_head">
+                  <h4>
+                    Premium 100% Bamboo <br />
+                    Toilet paper
+                  </h4>
+                </div>
+                <img
+                  src="./assets/image/product_emotions_services_img_1.png"
+                  alt=""
+                  class="product_specialities_card_img"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product_specialities_card">
+                <div class="product_specialities_card_head">
+                  <h4>
+                    Premium 100% Bamboo <br />
+                    Toilet paper
+                  </h4>
+                </div>
+                <img
+                  src="./assets/image/product_emotions_services_img_2.png"
+                  alt=""
+                  class="product_specialities_card_img"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product_specialities_card">
+                <div class="product_specialities_card_head">
+                  <h4>100% Premium</h4>
+                </div>
+                <img
+                  src="./assets/image/product_emotions_services_img_3.png"
+                  alt=""
+                  class="product_specialities_card_img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Fire Page Specialities End -->
+
+        <!-- Product Fire Page Our Team Start -->
+        <div class="product_team">
+          <div class="product_team_head">
+            <h2>Our Team</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product_team_card">
+                <div class="product_team_img">
+                  <img
+                    src="./assets/image/product_service_our_team_img_1.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="team_card_name">William Lancaster</h4>
+                <h5 class="team_card_position">Managing Director</h5>
+                <p class="team_card_desc">
+                  Bsc (Hons), LLB, GDLP William drives FTA’s management,
+                  compliance and policy development and..
+                </p>
+
+                <div class="product_team_btn">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product_team_card">
+                <div class="product_team_img">
+                  <img
+                    src="./assets/image/product_service_our_team_img_2.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="team_card_name">Robert Lancaster</h4>
+                <h5 class="team_card_position">Marketer</h5>
+                <p class="team_card_desc">
+                  Robert has extensive experience within the sales and marketing
+                  industry. Having worked successfully in this..
+                </p>
+
+                <div class="product_team_btn">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product_team_card">
+                <div class="product_team_img">
+                  <img
+                    src="./assets/image/product_service_our_team_img_3.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="team_card_name">Kyle Lancaster</h4>
+                <h5 class="team_card_position">Technician</h5>
+                <p class="team_card_desc">
+                  Kyle has a wealth of experience, knowledge and technical
+                  qualifications across the data, ICT, fire and safety..
+                </p>
+
+                <div class="product_team_btn">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product_team_card">
+                <div class="product_team_img">
+                  <img
+                    src="./assets/image/product_service_our_team_img_4.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="team_card_name">Robert Fox</h4>
+                <h5 class="team_card_position">QA Engineer</h5>
+                <p class="team_card_desc">
+                  Our experienced and qualified management team have extensive
+                  experience and expertise in the fire..
+                </p>
+
+                <div class="product_team_btn">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product Fire Page Our Team End -->
+
+        <!-- Product Fire Page Tab Start -->
+        <div class="product_fire_tab">
+          <div class="product_tabs">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#products">
+                  <span class="border"></span>Products & Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#procurement">
+                  <span class="border"></span>Social Procurement & Compliance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#supplier">
+                  <span class="border"></span>Supplier Capability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community">
+                  <span class="border"></span>Community Purpose</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">
+                  <span class="border"></span>Rating and Reviews</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#sdg">
+                  <span class="border"></span>UN SDG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">
+                  <span class="border"></span>Location</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#insurances">
+                  <span class="border"></span>Insurances & Accreditations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#environmental">
+                  <span class="border"></span>Environmental & Sustainability</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#training">
+                  <span class="border"></span>Training & Employment
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#employment">
+                  <span class="border"></span>Employment</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content">
+            <div id="products" class="container-fluid tab-pane"></div>
+            <div id="procurement" class="container-fluid tab-pane"></div>
+            <div id="supplier" class="container-fluid tab-pane"></div>
+            <div id="community" class="container-fluid tab-pane"></div>
+            <div id="reviews" class="container-fluid tab-pane"></div>
+            <div id="sdg" class="container-fluid tab-pane"></div>
+            <div id="location" class="container-fluid tab-pane"></div>
+            <div id="insurances" class="container-fluid tab-pane"></div>
+            <div id="environmental" class="container-fluid tab-pane"></div>
+            <div id="training" class="container-fluid tab-pane"></div>
+            <div id="employment" class="container-fluid tab-pane"></div>
+          </div>
+        </div>
+        <!-- Product Fire Page Tab End -->
+
+        <div class="space pb-4"></div>
+      </div>
+    </section>
+
+    <!-- Product Service Fire Page -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.3/apexcharts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/productEmotionsServiceChart.js"></script>
+  </body>
+</html>

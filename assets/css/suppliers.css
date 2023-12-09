@@ -1,0 +1,159 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+/* suppliers table start */
+
+#suppliers_table {
+  padding: 0px 30px 30px 40px;
+}
+
+.table_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table_options .search_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.search_box input::placeholder {
+  font-size: 0.9em;
+}
+
+.table_options .search_box span i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #606060;
+  font-size: 1em;
+}
+
+.table_options .search_box input {
+  border: none;
+  outline: none;
+}
+
+.table_options .table_short {
+  display: flex;
+  align-items: center;
+}
+
+.table_short .shorting_select {
+  display: flex;
+  align-items: center;
+}
+
+.table_short .shorting_select span {
+  font-size: 0.9em;
+  color: #606060;
+}
+
+.table_short .shorting_select .select_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.shorting_select .select_box select {
+  border: none;
+  outline: none;
+  padding-right: 10px;
+  font-size: 0.9em;
+  color: #b1b1b1;
+}
+
+.table_short .add_user_btn {
+  margin-left: 20px;
+}
+
+.table_short .add_user_btn a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: #037bff;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0 25px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+/* table */
+
+.table {
+  margin-top: 30px;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 0.9em;
+}
+
+.table_user {
+  display: flex;
+  align-items: center;
+}
+
+.table_user div {
+  width: 90px;
+  height: 45px;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.table_user div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.table_user a {
+  text-decoration: none;
+  color: #037bff;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.table_btn_row {
+  text-align: end;
+}
+
+.table_btn_row .table_btn {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #606060;
+}
+
+/* suppliers table end */

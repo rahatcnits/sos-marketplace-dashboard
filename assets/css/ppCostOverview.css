@@ -1,0 +1,148 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+.ppcost-container {
+  padding-right: 30px;
+}
+
+.table-new {
+  overflow-x: scroll;
+}
+
+.table-new::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-new::-webkit-scrollbar-track {
+  background-color: #fff;
+  outline: 1px solid #d9d9d9;
+  outline-offset: 2px;
+  border-radius: 30px;
+}
+.table-new::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 30px;
+}
+
+/* Project & Program Cost Overview Section Start */
+.ppcost-container {
+  margin-left: 45px;
+  overflow-x: hidden;
+}
+
+.pp-cost-heading p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.table-new {
+  border-radius: 10px !important;
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
+  width: 100%;
+}
+
+.table-new thead {
+  background: #144492;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.table-new thead th {
+  font-size: 16px;
+  font-weight: 400 !important;
+  padding: 0 20px;
+}
+
+.table-new tbody tr {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-new tbody td {
+  padding: 14px 20px;
+  font-size: 15px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-new tbody td:first-child {
+  width: 50%;
+  color: #1e2749;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+}
+.table-new tbody td:nth-child(even) {
+  text-align: left;
+  color: #1e2749;
+}
+
+.table-new tbody td:last-child {
+  text-align: right;
+  color: #1e2749;
+}
+
+.table-new tbody tr:last-child {
+  border-radius: 20px !important;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(20, 68, 146, 0.7);
+  margin: 30px 0;
+}
+
+.table-new2 th:first-child {
+  text-align: left;
+}
+
+.table-new2 th,
+td {
+  text-align: right;
+}
+
+.total_amount_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.total_amount_card {
+  padding: 15px;
+  background-color: #00bc8b;
+  margin-bottom: 30px;
+}
+
+.total_amount_card h4 {
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+}
+
+.total_amount_card_center {
+  padding-right: 13%;
+}
+
+@media screen and (max-width: 1600px) {
+  .total_amount_card_center {
+    padding-right: 11%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .total_amount_card_center {
+    padding-right: 9%;
+  }
+}
+
+/* Project & Program Cost Overview Section End */

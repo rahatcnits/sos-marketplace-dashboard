@@ -1,0 +1,374 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #00bc8b;
+  --secondary-color: #f3be00;
+  --accent-color: #ff5252;
+  --blue: #037bff;
+  --white: #fff;
+  --black: #000;
+  --primary-font: "Poppins";
+}
+
+/* Product Fire Page start */
+
+.product_service_wrapper {
+  padding: 0px 30px 0px 45px;
+}
+
+/* Product Hero Start */
+
+.product_hero {
+  position: relative;
+}
+
+.product_hero .product_hero_bg {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.product_hero_content {
+  padding: 30px;
+}
+
+.product_hero_content .product_logo {
+  width: 200px;
+}
+
+.product_hero_content h1 {
+  font-size: 2.5em;
+  color: var(--white);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1450px) {
+  .product_hero .product_hero_bg {
+    height: 320px;
+  }
+
+  .product_hero_content h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+}
+
+/* Product Hero End */
+
+/* Product About US Start */
+
+.product_about {
+  display: flex;
+  padding: 170px 0 30px;
+}
+
+.about_col_left {
+  width: calc(100% - 250px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0 0 10px;
+  padding: 20px;
+}
+
+.about_col_right {
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+}
+
+.about_content h2 {
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about_content p {
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: var(--primary-font);
+  font-weight: 500;
+}
+
+.product_about_chart_head h4 {
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: var(--primary-font);
+  text-align: center;
+  font-weight: 600;
+}
+
+.product_chart_lagend {
+  text-align: center;
+}
+
+.product_chart_lagend img {
+  width: 35px;
+}
+
+.product_chart_lagend span {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.product_chart_lagend span i {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 1450px) {
+  .product_about {
+    padding: 100px 0 30px;
+  }
+}
+
+/* Product About US End */
+
+/* Product Fire Page Video Start */
+
+.product_fire_video {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product_fire_video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Product Fire Page Video End */
+
+/* Product Fire Page Specialities Start */
+
+.product_specialities {
+  width: 100%;
+  padding: 55px 15px 15px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.product_specialities_card {
+  position: relative;
+}
+
+.product_specialities_card .product_specialities_card_img {
+  width: 100%;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.product_specialities_card:hover .product_specialities_card_img {
+  border: 1px solid var(--blue);
+}
+
+.product_specialities_card_head {
+  width: calc(100% - 40px);
+  margin: auto;
+  background-color: #144492;
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+}
+
+.product_specialities_card_head h4 {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 0;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1450px) {
+  .product_specialities_card_head h4 {
+    font-size: 1em;
+  }
+}
+
+/* Product Fire Page Specialities End */
+
+/* Product Fire Page Our Team Start */
+
+.product_team {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 30px 0 15px;
+}
+
+.product_team_card {
+  margin-top: 10px;
+}
+
+.product_team_head h2 {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.product_team_img {
+  width: 100%;
+  height: 220px;
+}
+
+.product_team_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product_team_card .team_card_name {
+  font-size: 1.4em;
+  color: var(--black);
+  font-family: var(--primary-font);
+  font-weight: 500;
+  margin: 15px 0 10px;
+}
+
+.product_team_card .team_card_position {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product_team_card .team_card_desc {
+  color: rgba(0, 0, 0, 0.6);
+  height: 80px;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.product_team_btn a {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  padding: 8px 0;
+  font-size: 1em;
+  font-family: var(--primary-font);
+  text-align: center;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1750px) {
+  .product_team_card .team_card_desc {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .product_team_card .team_card_desc {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .product_team_img {
+    height: 180px;
+  }
+
+  .product_team_card .team_card_name {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+  }
+
+  .product_team_card .team_card_position {
+    font-size: 0.9em;
+  }
+
+  .product_team_card .team_card_desc {
+    font-size: 0.8em;
+    height: 75px;
+  }
+
+  .product_team_btn a {
+    width: 100px;
+    padding: 7px 0;
+    font-size: 0.9em;
+  }
+}
+
+/* Product Fire Page Our Team End */
+
+/* Product Fire Page Tab Start */
+
+.product_tabs .nav-item {
+  margin-top: 15px;
+}
+
+.nav-item .nav-link {
+  position: relative;
+  color: var(--blue) !important;
+  font-family: var(--primary-font) !important;
+  font-weight: 500 !important;
+  margin-right: 0;
+  padding-right: 20px;
+  font-size: 1em;
+  border-radius: 0 !important;
+  border: none !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 0;
+}
+
+.border {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 0px;
+  bottom: 1px;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+  z-index: 1;
+}
+
+.nav-item .nav-link.active {
+  background-color: #144492 !important;
+  color: var(--white) !important;
+  clip-path: polygon(0% 0%, 90% 0, 95% 51%, 100% 100%, 0% 100%) !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .nav-item .nav-link {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .nav-item .nav-link {
+    font-size: 0.8em;
+  }
+}
+
+/* Product Fire Page Tab End */
+
+/* Product Fire Page end */

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project & Program Cost Overview - SOS Marketplace</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/ppCostOverview.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Suppliers
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Project & Program Cost Overview Page Starts -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Projects</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/image/progress_table_avatar_1.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Project & Program Cost Overview Section Start -->
+      <div class="ppcost-container">
+        <div class="pp-cost-heading">
+          <p>Project & Program Cost Overview</p>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="project-name-table">
+                <table class="table-new">
+                  <thead>
+                    <tr>
+                      <th style="border-top-left-radius: 10px">Project Name</th>
+                      <th></th>
+                      <th
+                        style="text-align: right; border-top-right-radius: 10px"
+                      >
+                        Total Program Costs in $AUD
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Project Stage</td>
+                      <td style="font-weight: 600">1 of 1</td>
+                      <td style="font-weight: 600">$131,428,900</td>
+                    </tr>
+                    <tr>
+                      <td>Total Project Cost</td>
+                      <td style="font-weight: 600">TOTAL</td>
+                      <td style="font-weight: 600">$131,428,900</td>
+                    </tr>
+                    <tr>
+                      <td>Profit % and $</td>
+                      <td>3.5%</td>
+                      <td>$4,600,012</td>
+                    </tr>
+                    <tr>
+                      <td>Program Cost Less Profit</td>
+                      <td style="font-weight: 600">Subtotal</td>
+                      <td style="font-weight: 600">$126,828,889</td>
+                    </tr>
+                    <tr>
+                      <td>Overheads and Supervision</td>
+                      <td>7.5%</td>
+                      <td>$9,857,168</td>
+                    </tr>
+                    <tr>
+                      <td>Program Cost Less Profit & OH</td>
+                      <td style="font-weight: 600">Subtotal</td>
+                      <td style="font-weight: 600">$116,971,721</td>
+                    </tr>
+                    <tr>
+                      <td>Prelims as % of Total</td>
+                      <td>8.0%</td>
+                      <td>$10,514,312</td>
+                    </tr>
+                    <tr>
+                      <td>Cost of Trades (exd. Prelims)</td>
+                      <td>81.0%</td>
+                      <td>$106,457,409</td>
+                    </tr>
+                    <tr>
+                      <td>Costs if Trades - Labour</td>
+                      <td>28.0%</td>
+                      <td>$32,752,082</td>
+                    </tr>
+                    <tr style="border-radius: 10px">
+                      <td>Total Labour - Cost as per MPSG Calculation</td>
+                      <td style="font-weight: 600">Subtotal Labour</td>
+                      <td>$19,024,333</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table-new table-new2 mt-3">
+                  <tbody>
+                    <tr>
+                      <td style="background: #ffeedf; font-weight: 600">
+                        Total Workforce Hours
+                      </td>
+                      <td style="background: #ffeedf; font-weight: 600">
+                        70.00
+                      </td>
+                      <td style="background: #ffeedf; font-weight: 600">
+                        271,776
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table-new table-new2 mt-3">
+                  <tbody>
+                    <tr>
+                      <td
+                        style="
+                          background: rgba(3, 123, 255, 0.1);
+                          font-weight: 600;
+                        "
+                      >
+                        Total Materials, Plant, Other Cost
+                      </td>
+                      <td
+                        style="
+                          background: rgba(3, 123, 255, 0.1);
+                          font-weight: 600;
+                        "
+                      >
+                        Subtotal
+                      </td>
+                      <td
+                        style="
+                          background: rgba(3, 123, 255, 0.1);
+                          font-weight: 600;
+                        "
+                      >
+                        $131,428,900
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="divider"></div>
+
+                <table class="table-new table-new2">
+                  <thead>
+                    <tr>
+                      <th
+                        style="
+                          border-top-left-radius: 10px;
+                          white-space: nowrap;
+                        "
+                      >
+                        Project Overheads & Supervision
+                      </th>
+                      <th></th>
+                      <th style="white-space: nowrap">Commercial Contractor</th>
+                      <th
+                        style="
+                          text-align: right;
+                          border-top-right-radius: 10px;
+                          white-space: nowrap;
+                        "
+                      >
+                        Social Supplier/Contractor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Business Overheads</td>
+                      <td style="font-weight: 600">$1.975,368,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td>Project Profit</td>
+                      <td style="font-weight: 600">$4,600,011,50</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="background: #ffeedf">Project Supervision</td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Senior Site Management</td>
+                      <td style="font-weight: 600">$740,00,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Design Management</td>
+                      <td style="font-weight: 600">$280,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Project Management</td>
+                      <td style="font-weight: 600">$190,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Project Coordinators</td>
+                      <td style="font-weight: 600">$1,900,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Administration Support</td>
+                      <td style="font-weight: 600">$480,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Site Foreman</td>
+                      <td style="font-weight: 600">$540.000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Leading Hand</td>
+                      <td style="font-weight: 600">$390,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Construction Workers</td>
+                      <td style="font-weight: 600">$260,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Apprentice Carpenters</td>
+                      <td style="font-weight: 600">$210,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Apprentice Boilermakers</td>
+                      <td style="font-weight: 600">$73,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Administration Support</td>
+                      <td style="font-weight: 600">$84,800,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="background: #ffeedf">Project Overheads</td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Printers and Copiers</td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Stationary Supply & Printing
+                      </td>
+                      <td style="font-weight: 600">$60,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Project Stage</td>
+                      <td style="font-weight: 600">$1.975,368,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Site Office Hire and Fitout
+                      </td>
+                      <td style="font-weight: 600">$26,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Fuel and Vehicles</td>
+                      <td style="font-weight: 600">$11,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Electrical and Water Supply
+                      </td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Kitchen Supplies to Office
+                      </td>
+                      <td style="font-weight: 600">$20,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Vending Machines Supply, Stocking & Hire (PPE, Drinks)
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table-new table-new2 mt-3">
+                  <tbody>
+                    <tr>
+                      <td style="background: #ffeedf; font-weight: 600">
+                        Subtotal
+                      </td>
+                      <td style="background: #ffeedf; font-weight: 600">
+                        $14,457,179.50
+                      </td>
+                      <td style="background: #ffeedf; font-weight: 600"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="divider"></div>
+
+                <table class="table-new table-new2">
+                  <thead>
+                    <tr>
+                      <th style="border-top-left-radius: 10px; font-size: 15px">
+                        Subcontractor Trade Works
+                      </th>
+                      <th></th>
+                      <th style="white-space: nowrap; font-size: 15px">
+                        Commercial Contractor
+                      </th>
+                      <th
+                        style="
+                          text-align: right;
+                          white-space: nowrap;
+                          border-top-right-radius: 10px;
+                          font-size: 15px;
+                        "
+                      >
+                        Social Supplier/Contractor
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="background: #ffeedf">Preliminaries</td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Transport</td>
+                      <td style="font-weight: 600">$4,600,011,50</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Security</td>
+                      <td style="font-weight: 600">$4,600,011,50</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Electrical Test & Tagging
+                      </td>
+                      <td style="font-weight: 600">$740,00,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Temporary Fence</td>
+                      <td style="font-weight: 600">$280,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Site Equipment</td>
+                      <td style="font-weight: 600">$190,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Site Cranage (wet hire)</td>
+                      <td style="font-weight: 600">$1,900,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Scaffold and Props</td>
+                      <td style="font-weight: 600">$480,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Generator Hire</td>
+                      <td style="font-weight: 600">$540.000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Builders Clean and Final Clean
+                      </td>
+                      <td style="font-weight: 600">$390,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Design</td>
+                      <td style="font-weight: 600">$260,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Authority Fees & Connections
+                      </td>
+                      <td style="font-weight: 600">$210,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Workshop & Tool Costs</td>
+                      <td style="font-weight: 600">$73,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Traffic Management</td>
+                      <td style="font-weight: 600">$84,800,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        PPE, Signage and Barriers
+                      </td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        First Aid, Fire Extinguishers & Spill Kits
+                      </td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Workwear</td>
+                      <td style="font-weight: 600">$60,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="background: #ffeedf">
+                        Trade Work Packages - Main Works
+                      </td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Civil Works, Bulk and Details Excavation
+                      </td>
+                      <td style="font-weight: 600">$11,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Inground Services</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Structure From, Reo, Pour
+                      </td>
+                      <td style="font-weight: 600">$20,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Brickwork and Blackwork</td>
+                      <td style="font-weight: 600">$740,00,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Facade Aluminum Panneling
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Floor Substrate</td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Doors, Frames and Fire Doors
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Door Hardware</td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        External Finishes and Cladding
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Windows, Skylights and Glazing
+                      </td>
+                      <td style="font-weight: 600">$180,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Roofing and Roof Plumbing
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Partition and Lining</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Wall Finishes and Tiling</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Floor Finishes Vinyl and Carpet
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Blinds & Screens</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Pinboards and White Boards
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Painting</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Jointing</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Shower Screens</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Hydraulic Services</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Fittings Fixtures Equipment
+                      </td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Electrical Services & Lighting
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Mechanical Services</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Fire Services</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Landscaping - Hard</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">
+                        Landscaping - Sort & Irrigation
+                      </td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Asphalt and Kerning</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Site Skilled Labour</td>
+                      <td style="font-weight: 600">$11.900.00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight: 400">Site Unskilled Labour</td>
+                      <td style="font-weight: 600">$12,000,00</td>
+                      <td>Auto Populate</td>
+                      <td>Auto Populate</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table-new table-new2 mt-3">
+                  <tbody>
+                    <tr>
+                      <td style="background: #ffeedf">Subtotal</td>
+                      <td style="background: #ffeedf"><b>$116,971,721</b></td>
+                      <td style="background: #ffeedf"></td>
+                      <td style="background: #ffeedf"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="total_amount_section mt-3">
+                  <div class="row">
+                    <div class="col-md-8 pe-0">
+                      <div class="total_amount_wrapper">
+                        <div
+                          class="total_amount_card"
+                          style="
+                            width: 40%;
+                            border-bottom-left-radius: 10px;
+                            background: #fc7e14;
+                            color: #fff;
+                          "
+                        >
+                          <h4>Total</h4>
+                        </div>
+                        <div
+                          class="total_amount_card total_amount_card_center"
+                          style="
+                            width: 60%;
+                            border-bottom-right-radius: 10px;
+                            background: #ffeedf;
+                            text-align: right;
+                          "
+                        >
+                          <h4>$131,428,901</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="total_amount_card"
+                        style="
+                          background: #144492;
+                          color: #fff;
+                          text-align: right;
+                          border-bottom-left-radius: 10px;
+                          border-bottom-right-radius: 10px;
+                        "
+                      >
+                        <h4>% Requirement Met</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project & Program Cost Overview Section End -->
+    </section>
+    <!-- Project & Program Cost Overview Page End -->
+  </body>
+</html>

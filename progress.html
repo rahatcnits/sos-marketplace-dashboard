@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOS Marketplace - Manage Users</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/progress.css" />
+    <link rel="stylesheet" href="./assets/css/manage-users.css" />
+
+    <!-- Boxicon CDN -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awosome CDN -->
+    <script
+      src="https://kit.fontawesome.com/44f1800e1f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <span class="sidebar_open_btn">
+        <img
+          class="open_btn"
+          src="./assets/icons/bx-chevrons-left.svg"
+          alt=""
+        />
+      </span>
+
+      <div class="logo-details">
+        <i><img src="./assets/image/logo_icon.png" alt="" /></i>
+        <span class="logo_name">
+          <img src="./assets/image/logo_text.png" alt="" />
+        </span>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <a href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Home</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./index.html">Home</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Reporting
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="link_name">Projects</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Project
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./progress.html">
+            <i class="fa-solid fa-gear"></i>
+            <span class="link_name">Manage Users</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="./progress.html">Manage Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link_name">Staff</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="link_name">To Do</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">To Do</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-comments"></i>
+            <span class="link_name">Chat</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <span class="link_name">Finance</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Finance</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="link_name">Buyer</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Buyer</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="./suppliers.html">
+              <i class="fa-solid fa-users"></i>
+              <span class="link_name">Suppliers</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="./suppliers.html">Suppliers</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> Suppliers
+                Dashboard</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <span class="link_name">Settings</span>
+            </a>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Settings</a></li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icons/disc_icon.svg" alt="" /> User
+                Setting</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Manage Users Page -->
+    <section class="home-section">
+      <!-- navbar start -->
+      <nav class="navbars">
+        <div class="nav_logo">
+          <h3>Learning Modules</h3>
+        </div>
+
+        <div class="nav_items">
+          <div class="search_box">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/chat_icon.svg" alt="" />
+          </div>
+
+          <div class="chat_btn">
+            <span></span>
+            <img src="./assets/icons/bell_icon.svg" alt="" />
+          </div>
+
+          <div class="select_box">
+            <img src="./assets/icons/user_icon.png" alt="" />
+            <select name="" id="">
+              <option value="buyer">Buyer</option>
+              <option value="profile">Profile</option>
+              <option value="logout">Logout</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+      <!-- Progress tabs -->
+      <div class="progress-user-tabs">
+        <div class="container-fluid">
+          <!-- Nav tabs -->
+          <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#index">
+                <span class="border"></span>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#discussion">
+                <span class="border"></span>Discussion</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#modules">
+                <span class="border"></span>Modules</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#projects">
+                <span class="border"></span>Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#tasks">
+                <span class="border"></span>Tasks</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#progress">
+                <span class="border"></span>Progress</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <section class="all_tabs_content">
+          <!-- Tab Content -->
+          <div class="tab-content">
+            <div id="index" class="container-fluid tab-pane active">
+              <div class="row mb-4">
+                <div class="col-6 align-bottom mt-2">
+                  <div id="home" class="container tab-pane active">
+                    <br />
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">Learning Management</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Manage Users
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-4 manage-btn">
+                  <a href="#">
+                    <button>
+                      <img src="./assets/icons/settings_icon.svg" alt="" />
+                      Manage Role
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="learners-card">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Learners</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-1.png" alt="" />
+                            </div>
+
+                            <div class="profile-info">
+                              <h6>Lucretia de jong</h6>
+                              <p>
+                                Social change engineer, identifying and
+                                innovative
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-2.png" alt="" />
+                            </div>
+
+                            <div class="profile-info">
+                              <h6>Clint Webb</h6>
+                              <p>
+                                Social Outcome Solutions, Priority Group
+                                Training and Employment
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mt-4">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-3.png" alt="" />
+                            </div>
+
+                            <div class="profile-info">
+                              <h6>Emily Mudge</h6>
+                              <p>
+                                Social Outcome Solutions, Social Procurement
+                                Infrastructure and Major Projects
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6 mt-4">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-4.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>David Fraser</h6>
+                              <p>CFO Chartered Accountant</p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faciliators-card mt-4 mb-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Facilitators</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-5.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Jamie Engel (Neu)</h6>
+                              <p>Founder, Neutopia</p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-6.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Stephen Rutter</h6>
+                              <p>Founder, The Scale Institute</p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="coaches-card mt-4 mb-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <h6>Coaches</h6>
+                      </div>
+                      <div class="col-6">
+                        <div class="invite-btn">
+                          <a href="#">
+                            <button class="invite-button">
+                              Invite to join
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-3">
+                      <div class="col-6">
+                        <div
+                          class="learner-card-single justify-content-between d-flex"
+                        >
+                          <div class="avatar-info d-flex">
+                            <div class="avatar">
+                              <img src="./assets/image/avatar-7.png" alt="" />
+                            </div>
+
+                            <div class="profile-info mt-2">
+                              <h6>Larry Doran</h6>
+                              <p>
+                                Looking for partners for our digital ecosystem
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="follow">
+                            <button class="follow-btn">Following</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="discussion" class="container-fluid tab-pane">
+              <h3>Discussion</h3>
+            </div>
+
+            <div id="modules" class="container-fluid tab-pane">
+              <h3>Modules</h3>
+            </div>
+
+            <div id="projects" class="container-fluid tab-pane">
+              <h3>Projects</h3>
+            </div>
+
+            <div id="tasks" class="container-fluid tab-pane">
+              <h3>Tasks</h3>
+            </div>
+
+            <!-- progress -->
+            <div id="progress" class="container-fluid tab-pane">
+              <div class="row mb-4">
+                <div class="col-6 align-bottom mt-2">
+                  <div id="home" class="container tab-pane active">
+                    <br />
+                    <nav
+                      style="--bs-breadcrumb-divider: '>'"
+                      aria-label="breadcrumb"
+                    >
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#">Learning Modules</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Progress
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="col-6 mt-4 manage-btn">
+                  <a href="#">
+                    <button>
+                      <img src="./assets/icons/members.svg" alt="" />
+                      Members
+                    </button></a
+                  >
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr class="table-head">
+                    <td>Name</td>
+                    <td>Company Name</td>
+                    <td>Modules 100% <br />complete</td>
+                    <td>
+                      Cultural<br />
+                      Awareness
+                    </td>
+                    <td>
+                      Gender &<br />
+                      Diversity
+                    </td>
+                    <td>
+                      Inclusive<br />
+                      Communication
+                    </td>
+                    <td>
+                      Unconscious<br />
+                      Bias
+                    </td>
+                    <td>
+                      Social<br />
+                      Procurement 101
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_1.png"
+                          alt=""
+                        />
+                      </div>
+                      Daniel Roberts
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      SOS
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="five"></div>
+                        <span style="color: #fff"> 100%</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_2.png"
+                          alt=""
+                        />
+                      </div>
+                      Brooklyn Jons
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      JHG
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="one"></div>
+                        <span> 1/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="one"></div>
+                        <span> 1/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_3.png"
+                          alt=""
+                        />
+                      </div>
+                      Kristin Watson
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      Hansen Yunken
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="five"></div>
+                        <span style="color: #fff"> 100%</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="two"></div>
+                        <span> 2/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_4.png"
+                          alt=""
+                        />
+                      </div>
+                      Darrell Steward
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      City of Ballarat
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="two"></div>
+                        <span> 2/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="one"></div>
+                        <span> 1/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="one"></div>
+                        <span> 1/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="two"></div>
+                        <span> 2/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_5.png"
+                          alt=""
+                        />
+                      </div>
+                      Cameron Smythe
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      Sungrow
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="two"></div>
+                        <span> 2/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="five"></div>
+                        <span style="color: #fff"> 100%</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_6.png"
+                          alt=""
+                        />
+                      </div>
+                      Theresa Webb
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      Altus
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="five"></div>
+                        <span style="color: #fff"> 100%</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="five"></div>
+                        <span style="color: #fff"> 100%</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="progress_table_user">
+                      <div>
+                        <img
+                          src="./assets/image/progress_table_avatar_7.png"
+                          alt=""
+                        />
+                      </div>
+                      Guy Hawkins
+                    </td>
+                    <td style="font-weight: 700; color: rgba(30, 39, 73, 0.7)">
+                      Vortex
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="active"></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="one"></div>
+                        <span> 1/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div></div>
+                        <span> 0/5</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="progress_table_bar">
+                        <div class="two"></div>
+                        <span> 2/5</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Progress tabs -->
+    </section>
+
+    <!-- Progress Page -->
+
+    <!-- script -->
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>
