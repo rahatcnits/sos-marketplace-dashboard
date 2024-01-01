@@ -1,6 +1,6 @@
 // Project Risk Levels chart
 var options = {
-  series: [78, 45, 50, 50],
+  series: [78, 45, 68, 30],
   chart: {
     height: 370,
     type: "radialBar",
@@ -139,7 +139,18 @@ var options = {
     colors: ["transparent"],
   },
   xaxis: {
-    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+    ],
   },
   yaxis: {
     title: {
@@ -176,7 +187,7 @@ chart.render();
 
 // mpsg pie chart
 var options = {
-  series: [8, 7, 5, 8, 10, 15, 10, 7, 13, 5, 8, 4],
+  series: [8, 7, 5, 8, 5, 63, 4],
   chart: {
     width: "50%",
     type: "pie",
@@ -200,12 +211,7 @@ var options = {
     "Asylum seeker/refugees",
     "Long term unemployed",
     "LGBTQI+",
-    "Aboriginal & Torres Strait Islanders",
-    "Women",
-    "People living with a disability",
-    "Entrenched disadvantage",
-    "Women escaping violence",
-    "New migrants",
+    "Non-Priority Group Workforce",
   ],
   stroke: {
     show: false,
@@ -218,12 +224,7 @@ var options = {
     "#980090",
     "#FF9F51",
     "#A1DAE8",
-    "#FFBDCB",
     "#FF787C",
-    "#82E200",
-    "#00C3FF",
-    "#8D0085",
-    "#00FFFF",
     "#A627D3",
   ],
   legend: {

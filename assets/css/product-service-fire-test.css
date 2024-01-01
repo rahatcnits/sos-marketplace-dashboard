@@ -67,7 +67,6 @@
     font-size: 0.9em;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .nav-item .nav-link {
     font-size: 0.8em;
@@ -208,7 +207,6 @@
   outline-offset: 2px;
   border-radius: 30px;
 }
-
 .related_product_card_wrapper::-webkit-scrollbar-thumb {
   background: #d9d9d9;
   border-radius: 30px;
@@ -254,8 +252,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.product_service_card.active .service_card_desc,
-
 .product_service_card:hover .service_card_desc {
   opacity: 0;
   pointer-events: none;
@@ -289,8 +285,6 @@
   user-select: none;
   transition: all 0.5s ease-in-out;
 }
-
-.product_service_card.active .service_card_overlay,
 
 .product_service_card:hover .service_card_overlay {
   opacity: 1;
@@ -431,11 +425,9 @@
 .social_proc_chart_legend .legend_box.color1 {
   background-color: #000091;
 }
-
 .social_proc_chart_legend .legend_box.color2 {
   background-color: #980090;
 }
-
 .social_proc_chart_legend .legend_box.color3 {
   background-color: #ff5438;
 }
@@ -470,12 +462,10 @@
     font-size: 1em;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .product_chart_labels h4 {
     font-size: 0.8em;
   }
-
   .social_proc_chart_legend {
     right: 20px;
   }
@@ -602,7 +592,6 @@
   background-color: #fff;
   border-radius: 30px;
 }
-
 .features_card_content::-webkit-scrollbar-thumb {
   background: #d9d9d9;
   border-radius: 30px;
@@ -1107,27 +1096,22 @@
 .sustainable_chart_features_content1 {
   left: 55%;
 }
-
 .sustainable_chart_features_content2 {
   right: 16%;
   top: 29%;
 }
-
 .sustainable_chart_features_content3 {
   right: 22%;
   bottom: -10px;
 }
-
 .sustainable_chart_features_content4 {
   left: 35%;
   bottom: -15px;
 }
-
 .sustainable_chart_features_content5 {
   left: 19%;
   top: 52%;
 }
-
 .sustainable_chart_features_content6 {
   left: 23%;
   top: 2%;
@@ -1149,27 +1133,22 @@
   left: 50%;
   top: 23%;
 }
-
 .sustainable_chart_content p:nth-child(2) {
   right: 37%;
   top: 31%;
 }
-
 .sustainable_chart_content p:nth-child(3) {
   right: 34%;
   bottom: 32%;
 }
-
 .sustainable_chart_content p:nth-child(4) {
   left: 48%;
   bottom: 23%;
 }
-
 .sustainable_chart_content p:nth-child(5) {
   left: 37%;
   bottom: 32%;
 }
-
 .sustainable_chart_content p:nth-child(6) {
   left: 37%;
   top: 31%;
@@ -1207,15 +1186,12 @@
 .sustainable_chart_legend .legend_box.color1 {
   background-color: #09775a;
 }
-
 .sustainable_chart_legend .legend_box.color2 {
   background-color: #dfaf06;
 }
-
 .sustainable_chart_legend .legend_box.color3 {
   background-color: #ff5438;
 }
-
 .sustainable_chart_legend .legend_box.color4 {
   background-color: #980090;
 }

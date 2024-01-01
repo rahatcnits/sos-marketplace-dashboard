@@ -1,6 +1,6 @@
 // Project Indigenous Inclusion Risk Levels
 var options = {
-  series: [78, 70, 55, 60, 50],
+  series: [78, 37, 55, 45, 50],
   chart: {
     height: 370,
     type: "radialBar",

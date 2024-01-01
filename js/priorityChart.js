@@ -1,6 +1,6 @@
 // priority Inclusion Risk levels chart
 var options = {
-  series: [76, 62, 76, 48],
+  series: [76, 62, 76, 55],
   chart: {
     height: 370,
     type: "radialBar",
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
+  colors: ["#144492", "#F3BE00", "#00B050", "#F3BE00"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,

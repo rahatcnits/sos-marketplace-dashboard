@@ -1,6 +1,6 @@
 // Disability Inclusion Risk levels chart
 var options = {
-  series: [76, 55, 68, 50],
+  series: [76, 55, 68, 68],
   chart: {
     height: 370,
     type: "radialBar",
@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#F3BE00", "#00B050", "#FF0000"],
+  colors: ["#144492", "#F3BE00", "#00B050", "#00B050"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,

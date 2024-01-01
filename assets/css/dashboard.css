@@ -828,11 +828,11 @@
 
 .pie_chart_labels .label_items.one {
   top: 38%;
-  left: 57%;
+  left: 58%;
 }
 
 .pie_chart_labels .label_items.two {
-  top: 62%;
+  top: 63%;
   left: 60%;
 }
 
@@ -894,7 +894,7 @@
 
 @media screen and (max-width: 1600px) {
   .pie_chart_labels .label_items.one {
-    left: 52%;
+    left: 56%;
   }
 }
 
