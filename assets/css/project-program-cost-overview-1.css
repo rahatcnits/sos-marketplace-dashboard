@@ -199,18 +199,26 @@
   border-right: 1px solid rgb(0, 0, 0, 0.15);
 }
 
+.table_sub_head span {
+  font-size: 12px !important;
+}
+
 @media screen and (max-width: 1600px) {
   .project_table_one_main_head .table_one_row {
     height: 140px;
   }
 
   .project_table_one_main_head .table_one_row span {
-    font-size: 11px !important;
+    font-size: 10px !important;
     line-height: 16px;
   }
 
   .project_table_one_data .table_one_row span {
     font-size: 10px !important;
+  }
+
+  .table_sub_head span {
+    font-size: 11px !important;
   }
 
   /* .project_table_one_main_head .table_one_col_left .col_left_3 span {
