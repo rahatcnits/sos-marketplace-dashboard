@@ -140,14 +140,14 @@ chart.render();
 
 // Local Content Chart
 var options = {
-  series: [60, 27],
+  series: [100],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#FF5438", "#980090"],
+  colors: ["#FF5438"],
   dataLabels: {
     enabled: false,
   },

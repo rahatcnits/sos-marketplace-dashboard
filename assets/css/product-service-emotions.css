@@ -24,7 +24,6 @@
 .product_fire_head h4 {
   font-size: 1.6em;
   font-weight: 600;
-  text-transform: capitalize;
   color: rgba(0, 0, 0, 0.7);
   font-family: var(--primary-font);
 }

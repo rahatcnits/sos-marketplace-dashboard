@@ -40,7 +40,7 @@ var options = {
       },
     },
   },
-  colors: ["#144492", "#00B050", "#F3BE00", "#00B050", "#FF0000"],
+  colors: ["#144492", "#FF0000", "#F3BE00", "#FF0000", "#F3BE00"],
   labels: ["Completion", "Medium", "Low", "High"],
   legend: {
     show: false,
