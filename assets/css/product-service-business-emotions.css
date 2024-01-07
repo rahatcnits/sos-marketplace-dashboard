@@ -35,6 +35,16 @@
   padding: 30px;
 }
 
+.product_certified_logo {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+}
+
+.product_certified_logo img {
+  width: 220px;
+}
+
 .product_hero_content .product_logo {
   width: 200px;
 }
@@ -51,6 +61,15 @@
 @media screen and (max-width: 1450px) {
   .product_hero .product_hero_bg {
     height: 320px;
+  }
+
+  .product_certified_logo img {
+    width: 200px;
+  }
+
+  .product_certified_logo {
+    right: 30px;
+    top: 35px;
   }
 
   .product_hero_content h1 {

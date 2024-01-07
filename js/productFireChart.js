@@ -1,13 +1,13 @@
 // financial pie chart
 var options = {
-  series: [600000, 200000],
+  series: [200, 600],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#144492", "#980090"],
+  colors: ["#980090", "#144492"],
   dataLabels: {
     enabled: false,
   },
@@ -35,7 +35,7 @@ var options = {
             label: "",
             formatter: function (w) {
               return w.globals.seriesTotals.reduce((a, b) => {
-                return `800,000`;
+                return `$800K`;
               });
             },
           },
