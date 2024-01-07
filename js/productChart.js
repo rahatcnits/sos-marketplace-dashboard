@@ -1,13 +1,13 @@
 // financial pie chart
 var options = {
-  series: [70, 30],
+  series: [30, 70],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#144492", "#980090"],
+  colors: ["#980090", "#144492"],
   dataLabels: {
     enabled: false,
   },
@@ -72,14 +72,14 @@ chart.render();
 
 // Environmental Goal chat
 var options = {
-  series: [500],
+  series: [100, 400],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#144492"],
+  colors: ["#00BC8B", "#144492"],
   dataLabels: {
     enabled: false,
   },
