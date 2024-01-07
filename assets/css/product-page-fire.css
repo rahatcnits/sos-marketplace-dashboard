@@ -1344,6 +1344,10 @@
   border-radius: 8px;
 }
 
+.product_location_map img {
+  width: 100%;
+}
+
 .product_service_area_head {
   display: flex;
   align-items: center;
