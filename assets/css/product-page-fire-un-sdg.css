@@ -228,19 +228,19 @@
 
 @media screen and (max-width: 1530px) {
   .product_cart_details h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .product_price_row .product_price {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   .product_rating .rating_star i {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .product_rating span {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 

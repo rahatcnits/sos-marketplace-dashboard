@@ -1,13 +1,13 @@
 // financial pie chart
 var options = {
-  series: [70, 30],
+  series: [200, 600],
   chart: {
     type: "donut",
   },
   legend: {
     show: false,
   },
-  colors: ["#144492", "#980090"],
+  colors: ["#980090", "#144492"],
   dataLabels: {
     enabled: false,
   },
@@ -163,7 +163,7 @@ var options = {
             show: false,
           },
           value: {
-            show: false,
+            show: true,
             fontSize: "16px",
             fontFamily: "Poppins",
             color: "#000000",
@@ -173,7 +173,7 @@ var options = {
             },
           },
           total: {
-            show: false,
+            show: true,
           },
         },
         size: "75%",
