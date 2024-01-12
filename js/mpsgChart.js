@@ -14,7 +14,7 @@ var options = {
       hollow: {
         margin: 5,
         size: "30%",
-        background: "#FF0000",
+        background: "#F3BE00",
         image: undefined,
       },
       dataLabels: {
@@ -27,7 +27,7 @@ var options = {
         },
         total: {
           show: true,
-          label: ["High"],
+          label: ["Medium"],
           color: "#000",
           fontSize: "15px",
         },

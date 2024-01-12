@@ -297,7 +297,7 @@
 
 .product_team_card .team_card_desc {
   color: rgba(0, 0, 0, 0.6);
-  height: 80px;
+  height: 170px;
   font-family: var(--primary-font);
   font-size: 1em;
   font-weight: 500;
@@ -318,13 +318,19 @@
 
 @media screen and (max-width: 1750px) {
   .product_team_card .team_card_desc {
-    height: 100px;
+    height: 200px;
   }
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1600px) {
   .product_team_card .team_card_desc {
-    height: 120px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .team_card_position {
+    height: 40px;
   }
 }
 
@@ -344,13 +350,29 @@
 
   .product_team_card .team_card_desc {
     font-size: 0.8em;
-    height: 75px;
+    height: 160px;
+  }
+
+  .team_card_position {
+    height: auto;
   }
 
   .product_team_btn a {
     width: 100px;
     padding: 7px 0;
     font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .team_card_position {
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .product_team_card .team_card_desc {
+    height: 170px;
   }
 }
 

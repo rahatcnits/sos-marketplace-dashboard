@@ -1018,6 +1018,37 @@
   margin-bottom: 0;
 }
 
+.features_card_content_item p span {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.features_card_content_item ul {
+  margin: 0;
+  padding: 0;
+  /* list-style-position: inside; */
+  list-style: none;
+}
+
+.features_card_content_item p a {
+  margin-left: 4px;
+  color: var(--blue);
+}
+
+.features_card_content_item ul li {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.features_card_content_item ul li::before {
+  content: "\2022";
+  color: rgba(20, 69, 148, 0.5);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0em;
+}
+
 .features_card_content_item.active {
   background-color: var(--blue);
   display: flex;
@@ -1225,7 +1256,7 @@
 
 .profit-info img {
   width: 100%;
-  /* height: 100%; */
+  aspect-ratio: 1/1;
 }
 
 .profit-info p {
